@@ -4,8 +4,6 @@ import React, { useEffect, useRef, useState } from "react";
 import { AcmeLogo } from "./AcmeLogo";
 import { usePathname } from "next/navigation";
 import { navOptions } from "@/utils/constants";
-import AppsIcon from "@mui/icons-material/Apps";
-import CloseFullscreenIcon from "@mui/icons-material/CloseFullscreen";
 import Link from "next/link";
 
 const HeaderComponent = () => {
@@ -73,7 +71,7 @@ const HeaderComponent = () => {
           onClick={toggleMoreButton}
         >
           {isMoreButtonClicked ? "Less" : "More"}
-          {isMoreButtonClicked ? <CloseFullscreenIcon /> : <AppsIcon />}
+          {/* {isMoreButtonClicked ? <CloseFullscreenIcon /> : <AppsIcon />} */}
         </button>
       </div>
       {isMoreButtonClicked && (
