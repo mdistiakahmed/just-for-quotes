@@ -32,22 +32,17 @@ interface ImageMap {
   [key: number]: string;
 }
 
-export const totalImageCount = 14;
+export const totalImageCount = 9;
 export const imageMap: ImageMap = {
   0: "text-white",
   1: "text-white",
   2: "text-black",
-  3: "text-white",
-  4: "text-black",
-  5: "text-white",
+  3: "text-black",
+  4: "text-white",
+  5: "text-black",
   6: "text-black",
   7: "text-black",
   8: "text-white",
-  9: "text-black",
-  10: "text-black",
-  11: "text-blue",
-  12: "text-black",
-  13: "text-red",
 };
 
 export const quoteList = [

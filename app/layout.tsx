@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import { NextUIProvider } from "@nextui-org/react";
-import Breadcrumb from "@/components/breadcrumbs/Breadcrumb";
 import Footer from "@/components/footer/Footer";
 import HeaderComponent from "@/components/navbar/Header";
 import SecondaryHeader from "@/components/navbar/SecondaryHeader";
 
-const inter = Inter({ subsets: ["latin"] });
+const poppins = Poppins({
+  weight: ["400", "700"],
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Inspiring Quotes for Every Occasion | QuoteMaster",
@@ -39,7 +41,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={poppins.className}>
         <NextUIProvider>
           <HeaderComponent />
           <SecondaryHeader />

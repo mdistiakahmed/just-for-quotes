@@ -60,7 +60,7 @@ const HeaderComponent = () => {
             }`}
             key={index}
           >
-            <p className="font-semibold ">{o.name}</p>
+            <p>{o.name}</p>
           </Link>
         ))}
       </div>

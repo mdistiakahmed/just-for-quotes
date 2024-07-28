@@ -17,8 +17,8 @@ const CardComponent = ({ quote, author, serialNumber }: any) => {
       <div
         className={`absolute inset-0 flex flex-col justify-center items-center ${backgroundCssClass} p-5`}
       >
-        <p className="text-center text-xl sm:text-xl  font-bold">{quote}</p>
-        <p className="text-right text-md font-semibold">{author}</p>
+        <p className="text-center text-xl">{quote}</p>
+        <p className="text-right text-sm  self-end ">~{author}</p>
       </div>
     </div>
   );

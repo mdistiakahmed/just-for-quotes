@@ -6,17 +6,6 @@ import { usePathname, useRouter } from "next/navigation";
 import { categoryMap } from "@/utils/constants";
 import { useEffect, useState } from "react";
 
-const subNavList = [
-  "Love",
-  "Religion",
-  "Job",
-  "Loneliness",
-  "Family",
-  "Friends",
-  "Marriage",
-  "Others",
-];
-
 const dancingScript = Dancing_Script({
   subsets: ["latin"],
   weight: "400",

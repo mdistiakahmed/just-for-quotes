@@ -1,6 +1,5 @@
 import CardComponent from "@/components/card/CardComponent";
 import { quoteList } from "@/utils/constants";
-import Image from "next/image";
 
 export default function Home() {
   return (
