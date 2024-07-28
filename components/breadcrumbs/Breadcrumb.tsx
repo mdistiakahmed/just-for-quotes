@@ -24,7 +24,7 @@ const Breadcrumb = () => {
   }
 
   return (
-    <Breadcrumbs className="p-4">
+    <Breadcrumbs className="px-4 py-1">
       <BreadcrumbItem key={1000}>
         <Link href="/">Home</Link>
       </BreadcrumbItem>

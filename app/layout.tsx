@@ -43,7 +43,6 @@ export default function RootLayout({
         <NextUIProvider>
           <HeaderComponent />
           <SecondaryHeader />
-          <Breadcrumb />
           <div>{children}</div>
           <Footer />
         </NextUIProvider>

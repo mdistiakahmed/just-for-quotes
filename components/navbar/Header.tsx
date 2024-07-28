@@ -7,29 +7,21 @@ import { navOptions } from "@/utils/constants";
 import AppsIcon from "@mui/icons-material/Apps";
 import CloseFullscreenIcon from "@mui/icons-material/CloseFullscreen";
 import Link from "next/link";
-import { Dancing_Script } from "next/font/google";
-
-const subNavList = [
-  "Love",
-  "Religion",
-  "Job",
-  "Loneliness",
-  "Family",
-  "Friends",
-  "Marriage",
-  "Others",
-];
-
-const dancingScript = Dancing_Script({
-  subsets: ["latin"],
-  weight: "400", // You can specify the weight you need
-});
 
 const HeaderComponent = () => {
   const [isMoreButtonClicked, setIsMoreButtonClicked] = useState(false);
   const pathname = usePathname();
   const headerRef = useRef<any>(null);
 
+  const checkIfActivepath = (name: any) => {
+    if (name === "/") {
+      return pathname === name || pathname.includes("quotes");
+    } else {
+      return pathname.includes(name);
+    }
+  };
+
+  // close expaneded more button, by clicking outside
   const handleClickOutside = (event: any) => {
     if (
       headerRef.current &&
@@ -53,20 +45,24 @@ const HeaderComponent = () => {
 
   return (
     <header
-      className="bg-[#d33a2c] p-5 sm:px-[10vw] grid grid-cols-2 "
+      className="bg-[#d33a2c] px-5 py-2  sm:px-[10vw] grid grid-cols-2"
       ref={headerRef}
     >
-      <Link href={`/`} className="text-white flex items-center">
+      <Link href={`/`} className="text-white  flex items-center">
         <AcmeLogo />
-        <p className="font-bold text-inherit whitespace-nowrap">
-          Just For Quotes
-        </p>
+        <p className="font-bold  whitespace-nowrap">Just For Quotes</p>
       </Link>
 
       <div className="hidden sm:flex gap-5 justify-end items-center">
         {navOptions.map((o, index) => (
-          <Link href={`/${o.toLowerCase()}`} className="text-white" key={index}>
-            <p className="font-bold text-inherit ">{o}</p>
+          <Link
+            href={`${o.path}`}
+            className={`text-white  p-2 rounded-lg ${
+              checkIfActivepath(o.path) ? "bg-[#a92e23]" : ""
+            }`}
+            key={index}
+          >
+            <p className="font-semibold ">{o.name}</p>
           </Link>
         ))}
       </div>
@@ -81,12 +77,12 @@ const HeaderComponent = () => {
         </button>
       </div>
       {isMoreButtonClicked && (
-        <ul className="col-span-2 grid grid-cols-2 gap-4 mt-4">
+        <ul className="col-span-2 grid grid-cols-2 gap-4 my-6">
           {navOptions.map((o, index) => (
             <li className="flex items-center justify-center" key={index}>
-              <Link href={`/${o.toLowerCase()}`} className="text-white">
+              <Link href={`/${o.path}`} className="text-white">
                 <p className="font-bold text-center p-2 bg-[#a92e23] rounded-lg w-[90px] ">
-                  {o}
+                  {o.name}
                 </p>
               </Link>
             </li>
