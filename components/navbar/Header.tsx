@@ -5,6 +5,8 @@ import { AcmeLogo } from "./AcmeLogo";
 import { usePathname } from "next/navigation";
 import { navOptions } from "@/utils/constants";
 import Link from "next/link";
+import { IoAppsSharp } from "react-icons/io5";
+import { FaCompressArrowsAlt } from "react-icons/fa";
 
 const HeaderComponent = () => {
   const [isMoreButtonClicked, setIsMoreButtonClicked] = useState(false);
@@ -67,11 +69,11 @@ const HeaderComponent = () => {
 
       <div className="sm:hidden flex items-center justify-end">
         <button
-          className="flex gap-1 text-white font-semibold bg-[#a92e23] p-2 rounded-lg w-[80px]"
+          className="flex gap-1 items-center text-white font-semibold bg-[#a92e23] p-2 rounded-lg w-[80px]"
           onClick={toggleMoreButton}
         >
           {isMoreButtonClicked ? "Less" : "More"}
-          {/* {isMoreButtonClicked ? <CloseFullscreenIcon /> : <AppsIcon />} */}
+          {isMoreButtonClicked ? <FaCompressArrowsAlt /> : <IoAppsSharp />}
         </button>
       </div>
       {isMoreButtonClicked && (

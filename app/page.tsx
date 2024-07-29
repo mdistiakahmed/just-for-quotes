@@ -1,4 +1,5 @@
 import CardComponent from "@/components/card/CardComponent";
+import RiddleCard from "@/components/card/RiddleCard";
 import { quoteList } from "@/utils/constants";
 import Image from "next/image";
 import Link from "next/link";
@@ -151,50 +152,6 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Puzzles */}
-
-        <Link href={`/puzzles`} className="cursor-pointer hover:text-[#d33a2c]">
-          <div className="flex items-center justify-center">
-            <h2 className="text-xl text-center "> Puzzles</h2>
-            <Image
-              src={"/button-arrow-hover.svg"}
-              height={20}
-              width={80}
-              className="h-[30px]"
-              alt="arrow"
-            />
-          </div>
-        </Link>
-
-        <p className="text-center text-lg leading-relaxed text-gray-800">
-          Challenge your mind and stay inspired with our unique collection of
-          puzzles and motivational quotes. Engage with brain-teasing puzzles
-          that sharpen your skills while boosting your motivation with powerful
-          quotes. Discover daily doses of inspiration and mental stimulation,
-          designed to keep you focused, driven, and entertained.
-        </p>
-
-        <div className="flex flex-col gap-2">
-          <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
-            {quoteList.slice(0, 4).map((q, index) => (
-              <CardComponent
-                quote={q.quote}
-                author={q.author}
-                serialNumber={index}
-                key={index}
-              />
-            ))}
-          </div>
-          <div className="flex items-center justify-end p-5 mr-[60px] md:mr-[80px]">
-            <Link
-              href={`/gender/girl`}
-              className="bg-[#d33a2c] hover:bg-[#f8c194] hover:text-black p-2 px-5 text-white font-bold relative custom-botton"
-            >
-              See More
-            </Link>
-          </div>
-        </div>
-
         {/* Riddles */}
 
         <Link href={`/riddles`} className="cursor-pointer hover:text-[#d33a2c]">
@@ -219,14 +176,9 @@ export default function Home() {
         </p>
 
         <div className="flex flex-col gap-2">
-          <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
+          <div className="grid grid-cols-1 gap-10 sm:grid-cols-2">
             {quoteList.slice(0, 4).map((q, index) => (
-              <CardComponent
-                quote={q.quote}
-                author={q.author}
-                serialNumber={index}
-                key={index}
-              />
+              <RiddleCard key={index} />
             ))}
           </div>
           <div className="flex items-center justify-end p-5 mr-[60px] md:mr-[80px]">
