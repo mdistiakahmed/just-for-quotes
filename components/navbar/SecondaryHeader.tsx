@@ -11,10 +11,9 @@ const dancingScript = Dancing_Script({
   weight: "400",
 });
 
-const SecondaryHeader = () => {
+const SecondaryHeader = ({ subNavList }: any) => {
   const pathname = usePathname();
   const router = useRouter();
-  const [navList, setNavList] = useState<any>(["Loading..."]);
   const [currentCategory, setCurrentCategory] = useState<any>("quotes");
   const [selectedSubNav, setSelectedSubNav] = useState<any>(null);
 
@@ -23,9 +22,6 @@ const SecondaryHeader = () => {
     const categoryPart = parts[1];
     setCurrentCategory(categoryPart);
     const category = categoryMap[categoryPart === "" ? "quotes" : categoryPart];
-    if (category) {
-      setNavList(category);
-    }
 
     if (parts.length > 2) {
       setSelectedSubNav(parts[2]);
@@ -48,7 +44,7 @@ const SecondaryHeader = () => {
     <header className={`${dancingScript.className} sticky top-0 z-10 bg-white`}>
       <nav className="p-2 sticky top-0">
         <ul className=" flex gap-4 overflow-auto no-scrollbar">
-          {navList.map((s: any, index: any) => (
+          {subNavList.map((s: any, index: any) => (
             <li
               className={`px-2 rounded-xl bg-[#ffe7e7] text-[#ff1414] text-[24px]  cursor-pointer border-[1px] hover:border-[#ff1414] ${
                 s.toLowerCase() === selectedSubNav ? "border-[#ff1414]" : ""

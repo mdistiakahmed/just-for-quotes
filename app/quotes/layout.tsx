@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
-import "./globals.css";
 import { NextUIProvider } from "@nextui-org/react";
 import Footer from "@/components/footer/Footer";
 import HeaderComponent from "@/components/navbar/Header";
 import SecondaryHeader from "@/components/navbar/SecondaryHeader";
+import { categoryMap } from "@/utils/constants";
 
 const poppins = Poppins({
   weight: ["400", "700"],
@@ -34,21 +34,19 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default function QuoteLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <body className={poppins.className}>
-        <NextUIProvider>
-          <HeaderComponent />
+  const subNavList = categoryMap.quotes;
 
-          <div>{children}</div>
-          <Footer />
-        </NextUIProvider>
-      </body>
-    </html>
+  return (
+    <section>
+      <SecondaryHeader subNavList={subNavList} />
+      <div className="flex items-center justify-center w-full">
+        <div className=" w-[95vw] md:w-[70vw] py-[20px]">{children}</div>
+      </div>
+    </section>
   );
 }

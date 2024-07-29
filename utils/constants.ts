@@ -1,5 +1,5 @@
 export const navOptions = [
-  { name: "Quotes", path: "/" },
+  { name: "Quotes", path: "/quotes" },
   { name: "Jokes", path: "/jokes" },
   { name: "Memes", path: "/memes" },
   { name: "Puzzles", path: "/puzzles" },
