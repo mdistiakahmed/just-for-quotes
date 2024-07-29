@@ -12,23 +12,23 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Inspiring Quotes for Every Occasion | QuoteMaster",
+  title: "Inspiring Quotes, Jokes, Memes, and Riddles | JustForQuotes",
   description:
-    "Discover a vast collection of motivational, love, religious, marriage, family, and loneliness quotes to inspire and uplift your spirit.",
+    "Explore a diverse collection of motivational quotes, jokes, memes, and riddles to uplift your mood and bring joy to your day.",
   openGraph: {
-    title: "Inspiring Quotes for Every Occasion | QuoteMaster",
+    title: "Inspiring Quotes, Jokes, Memes, and Riddles | JustForQuotes",
     description:
-      "Explore an extensive library of quotes on motivation, love, religion, marriage, family, and loneliness. Find the perfect quote to inspire and uplift your spirit.",
+      "Discover an extensive range of motivational quotes, jokes, memes, and riddles. Find inspiration, laughter, and fun all in one place.",
     type: "website",
     locale: "en_US",
     url: `https://justforquotes.com/`,
     siteName: "JustForQuotes",
     images: [
       {
-        url: "motivational-quotes.PNG",
+        url: "jfq.png",
         width: 1200,
         height: 630,
-        alt: "Inspirational quotes background",
+        alt: "Inspirational quotes, jokes, memes, and riddles background",
       },
     ],
   },

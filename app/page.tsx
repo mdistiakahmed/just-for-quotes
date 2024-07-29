@@ -1,10 +1,13 @@
 import CardComponent from "@/components/card/CardComponent";
+import JokeCard from "@/components/card/JokeCard";
 import RiddleCard from "@/components/card/RiddleCard";
 import { quoteList } from "@/utils/constants";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
+  const memes = ["/meme1.jpg", "/meme2.jpg", "/meme3.jpg", "/meme4.jpg"];
+
   return (
     <div className="flex items-center justify-center w-full">
       <div className=" w-[95vw] md:w-[70vw] py-[20px] flex flex-col gap-10">
@@ -91,12 +94,7 @@ export default function Home() {
         <div className="flex flex-col gap-2">
           <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
             {quoteList.slice(0, 4).map((q, index) => (
-              <CardComponent
-                quote={q.quote}
-                author={q.author}
-                serialNumber={index}
-                key={index}
-              />
+              <JokeCard key={index} />
             ))}
           </div>
           <div className="flex items-center justify-end p-5 mr-[60px] md:mr-[80px]">
@@ -133,13 +131,17 @@ export default function Home() {
 
         <div className="flex flex-col gap-2">
           <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
-            {quoteList.slice(0, 4).map((q, index) => (
-              <CardComponent
-                quote={q.quote}
-                author={q.author}
-                serialNumber={index}
-                key={index}
-              />
+            {memes.map((q, index) => (
+              <div key={index}>
+                <Image
+                  src={q}
+                  alt={`meem-${index}`}
+                  width={300}
+                  height={300}
+                  layout="responsive"
+                  objectFit="cover"
+                />
+              </div>
             ))}
           </div>
           <div className="flex items-center justify-end p-5 mr-[60px] md:mr-[80px]">

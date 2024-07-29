@@ -1,5 +1,3 @@
-import React from "react";
-
 const RiddleCard = () => {
   return (
     <div className="relative bg-white border border-gray-200 rounded-lg shadow-md p-4">
