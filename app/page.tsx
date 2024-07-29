@@ -126,8 +126,8 @@ export default function Home() {
         <p className="text-center text-lg leading-relaxed text-gray-800">
           Get your daily dose of laughter and inspiration with our fresh memes
           and motivational quotes. From side-splitting humor to uplifting
-          messages, we've got you covered. Find the perfect blend of funny and
-          focused to boost your mood and achieve your goals.
+          messages, we&apos;ve got you covered. Find the perfect blend of funny
+          and focused to boost your mood and achieve your goals.
         </p>
 
         <div className="flex flex-col gap-2">
