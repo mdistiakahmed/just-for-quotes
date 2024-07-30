@@ -57,8 +57,8 @@ const QuotePage = async () => {
         life&apos;s challenges. Find the perfect words to brighten your day and
         fuel your journey towards success.
       </p>
-      {categoryQuoteSection(loveQuoteList, "Love")}
       {categoryQuoteSection(successQuoteList, "Success")}
+      {categoryQuoteSection(loveQuoteList, "Love")}
       {categoryQuoteSection(lonelinessQuoteList, "Loneliness")}
       {categoryQuoteSection(religionQuoteList, "Religion")}
       {categoryQuoteSection(familyQuoteList, "Family")}
