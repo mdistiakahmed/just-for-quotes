@@ -13,13 +13,13 @@ interface CategoryMap {
 export const categoryMap: CategoryMap = {
   quotes: [
     "Love",
+    "Success",
     "Religion",
-    "Job",
     "Loneliness",
     "Family",
-    "Friends",
-    "Marriage",
-    "Others",
+    // "Friends",
+    // "Marriage",
+    // "Others",
   ],
   memes: ["Adult", "Job", "Family", "Friends", "Relationship", "memes"],
   jokes: ["Adult", "Job", "Family", "Friends", "Relationship", "jokes"],
@@ -50,6 +50,28 @@ export const imageMap: ImageMap = {
   14: "text-black",
 };
 
+export const quotePageMetaData: any = {
+  love: {
+    title: "Heartfelt Love Quotes: Inspirational & Romantic Sayings",
+    desc: "Discover a world of love with our collection of heartfelt love quotes. Find inspiration, romance, and deep connections in these beautiful words.",
+  },
+  success: {
+    title: "Inspirational Quotes: Find Your Motivation and Succeed",
+    desc: "Discover powerful and inspiring quotes to fuel your journey to success. Find motivation, wisdom, and encouragement in our collection.",
+  },
+  religion: {
+    title: "Inspiring Religious Quotes: Find Faith and Hope",
+    desc: "Discover powerful and uplifting religious quotes to nourish your soul. Find inspiration, wisdom, and guidance in these timeless words.",
+  },
+  loneliness: {
+    title: "Heart-Wrenching Loneliness Quotes: Find Comfort and Understanding",
+    desc: "Experience the depths of loneliness through these poignant quotes. Find solace, connection, and hope in shared feelings",
+  },
+  family: {
+    title: "Heartwarming Family Quotes: Celebrate the Love That Bonds Us",
+    desc: "Discover beautiful and inspiring family quotes that celebrate the love and bonds that unite us. Find comfort, joy, and inspiration in these heartfelt messages.",
+  },
+};
 export const quoteList = [
   {
     quote:

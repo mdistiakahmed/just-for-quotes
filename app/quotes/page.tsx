@@ -8,6 +8,9 @@ import React from "react";
 const QuotePage = async () => {
   const loveQuoteList = await getQuote("love");
   const lonelinessQuoteList = await getQuote("loneliness");
+  const successQuoteList = await getQuote("success");
+  const religionQuoteList = await getQuote("religion");
+  const familyQuoteList = await getQuote("family");
 
   const categoryQuoteSection = (catQuoteList: any, cat: any) => {
     return (
@@ -55,7 +58,10 @@ const QuotePage = async () => {
         fuel your journey towards success.
       </p>
       {categoryQuoteSection(loveQuoteList, "Love")}
+      {categoryQuoteSection(successQuoteList, "Success")}
       {categoryQuoteSection(lonelinessQuoteList, "Loneliness")}
+      {categoryQuoteSection(religionQuoteList, "Religion")}
+      {categoryQuoteSection(familyQuoteList, "Family")}
     </div>
   );
 };
