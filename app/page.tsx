@@ -1,12 +1,13 @@
 import CardComponent from "@/components/card/CardComponent";
 import JokeCard from "@/components/card/JokeCard";
+import QuoteCard from "@/components/card/QuoteCard";
 import RiddleCard from "@/components/card/RiddleCard";
 import { quoteList } from "@/utils/constants";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
-  const memes = ["/meme1.jpg", "/meme2.jpg", "/meme3.jpg", "/meme4.jpg"];
+  const memes = ["/meme1.jpg", "/meme2.jpg"];
 
   return (
     <div className="flex items-center justify-center w-full">
@@ -40,7 +41,7 @@ export default function Home() {
         <div className="flex flex-col gap-2">
           <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
             {quoteList.slice(0, 4).map((q, index) => (
-              <CardComponent
+              <QuoteCard
                 quote={q.quote}
                 author={q.author}
                 serialNumber={index}
@@ -50,7 +51,7 @@ export default function Home() {
           </div>
           <div className="flex items-center justify-end p-5 mr-[60px] md:mr-[80px]">
             <Link
-              href={`/gender/girl`}
+              href={`/quotes`}
               className="bg-[#d33a2c] hover:bg-[#f8c194] hover:text-black p-2 px-5 text-white font-bold relative custom-botton"
             >
               See More
@@ -60,7 +61,7 @@ export default function Home() {
 
         <div className="flex items-center justify-center">
           <Image
-            src={"/cat.svg"}
+            src={"/cat2.svg"}
             alt="happy cat"
             height={40}
             width={40}
@@ -99,7 +100,7 @@ export default function Home() {
           </div>
           <div className="flex items-center justify-end p-5 mr-[60px] md:mr-[80px]">
             <Link
-              href={`/gender/girl`}
+              href={`/jokes`}
               className="bg-[#d33a2c] hover:bg-[#f8c194] hover:text-black p-2 px-5 text-white font-bold relative custom-botton"
             >
               See More
@@ -130,23 +131,23 @@ export default function Home() {
         </p>
 
         <div className="flex flex-col gap-2">
-          <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
             {memes.map((q, index) => (
-              <div key={index}>
+              <div key={index} className="flex items-center justify-center">
                 <Image
                   src={q}
                   alt={`meem-${index}`}
                   width={300}
                   height={300}
-                  layout="responsive"
+                  layout="intrinsic"
                   objectFit="cover"
                 />
               </div>
             ))}
           </div>
-          <div className="flex items-center justify-end p-5 mr-[60px] md:mr-[80px]">
+          <div className="flex items-center justify-end mt-5 p-5 mr-[60px] md:mr-[80px]">
             <Link
-              href={`/gender/girl`}
+              href={`/memes`}
               className="bg-[#d33a2c] hover:bg-[#f8c194] hover:text-black p-2 px-5 text-white font-bold relative custom-botton"
             >
               See More
@@ -185,7 +186,7 @@ export default function Home() {
           </div>
           <div className="flex items-center justify-end p-5 mr-[60px] md:mr-[80px]">
             <Link
-              href={`/gender/girl`}
+              href={`/riddles`}
               className="bg-[#d33a2c] hover:bg-[#f8c194] hover:text-black p-2 px-5 text-white font-bold relative custom-botton"
             >
               See More
