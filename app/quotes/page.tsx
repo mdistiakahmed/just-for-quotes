@@ -50,9 +50,9 @@ const QuotePage = async () => {
       <p className="text-center text-lg leading-relaxed text-gray-800 mt-4">
         Discover a vast selection of motivational quotes, love and romantic
         quotes, and inspiring messages about success. Explore our curated
-        collection of quotes to uplift, inspire, and motivate you through life's
-        challenges. Find the perfect words to brighten your day and fuel your
-        journey towards success.
+        collection of quotes to uplift, inspire, and motivate you through
+        life&apos;s challenges. Find the perfect words to brighten your day and
+        fuel your journey towards success.
       </p>
       {categoryQuoteSection(loveQuoteList, "Love")}
       {categoryQuoteSection(lonelinessQuoteList, "Loneliness")}
