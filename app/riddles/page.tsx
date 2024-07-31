@@ -43,7 +43,7 @@ const RiddleHomePage = async () => {
       </h1>
       <p className="text-center text-lg leading-relaxed text-gray-800 mt-4">
         Dive into a world of mind-boggling puzzles with our vast collection of
-        riddles. From classic brain teasers to hilarious jokes, we've got
+        riddles. From classic brain teasers to hilarious jokes, we&apos;ve got
         something for everyone. Challenge your wit, sharpen your mind, and share
         the fun with friends. Solve riddles, laugh out loud, and become a riddle
         master today!
