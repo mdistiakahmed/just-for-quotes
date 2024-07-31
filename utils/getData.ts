@@ -50,3 +50,25 @@ export const getJokes = async (param: string) => {
     throw error;
   }
 };
+
+export const getRiddles = async (param: string) => {
+  try {
+    let riddleList = [];
+
+    switch (param) {
+      case "classic":
+        ({ riddleList } = await import("../data/riddles/classic"));
+        break;
+      case "funny":
+        ({ riddleList } = await import("../data/riddles/funny"));
+        break;
+      default:
+        throw new Error(`No data file found for param: ${param}`);
+    }
+
+    return riddleList;
+  } catch (error) {
+    console.error(error);
+    throw error;
+  }
+};

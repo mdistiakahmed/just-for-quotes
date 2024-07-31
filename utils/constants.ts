@@ -2,7 +2,7 @@ export const navOptions = [
   { name: "Quotes", path: "/quotes" },
   { name: "Jokes", path: "/jokes" },
   { name: "Memes", path: "/memes" },
-  { name: "Riddles", path: "/riddle" },
+  { name: "Riddles", path: "/riddles" },
   { name: "Stories", path: "/stories" },
 ];
 
@@ -27,7 +27,11 @@ export const categoryMap: any = {
     // { name: "Animal Jokes", path: "Animal-Jokes" },
   ],
   puzzles: ["Logic", "Math", "Word", "Visual", "Brain Teasers"],
-  riddle: ["Classic", "What Am I?", "Logic", "Math", "Funny"],
+  riddles: [
+    { name: "Classic", path: "Classic" },
+    { name: "Funny", path: "Funny" },
+    // { name: "Kids", path: "Kids" },
+  ],
 };
 
 interface ImageMap {
@@ -84,6 +88,21 @@ export const jokesPageMetaData: any = {
   knockknock: {
     title: "Knock-Knock Jokes to Make You Laugh ",
     desc: "Discover a fun collection of knock-knock jokes that will make you laugh out loud. Enjoy classic and new knock-knock jokes perfect for sharing with friends and family at JustForQuotes.",
+  },
+};
+
+export const riddlesPageMetaData: any = {
+  classic: {
+    title: "Classic Riddles: Sharpen Your Mind with Timeless Puzzles",
+    desc: `Challenge your intellect with our collection of classic riddles.
+     From easy to expert, these brain teasers will test your problem-solving skills and provide hours of fun. 
+     Discover the joy of unraveling timeless puzzles.`,
+  },
+  funny: {
+    title: "Funny Riddles: Get Ready to Laugh Out Loud!",
+    desc: `Can't stop laughing? Our collection of funny riddles is here to tickle your funny bone!
+     Challenge your friends and family with these hilarious brain teasers and see who can crack the jokes first. 
+     Get ready for a side-splitting good time!`,
   },
 };
 
