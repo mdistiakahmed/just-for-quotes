@@ -141,3 +141,23 @@ export const jokeList = [
     joke: `Knock, Knock;Who's there?;Tank.;Tank who?;You're welcome.`,
   },
 ];
+
+export const riddleList = [
+  {
+    riddle:
+      "I speak without a mouth and hear without ears. I have no body, but I come alive with wind. What am I?",
+    answer: "An echo.",
+  },
+  {
+    riddle: "I'm tall when I'm young, and I'm short when I'm old. What am I?",
+    answer: "A candle.",
+  },
+  {
+    riddle: "The more of this there is, the less you see. What is it?",
+    answer: "Darkness.",
+  },
+  {
+    riddle: "What has keys but can't open locks?",
+    answer: "A piano.",
+  },
+];

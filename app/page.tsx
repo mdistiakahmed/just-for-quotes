@@ -1,8 +1,7 @@
-import CardComponent from "@/components/card/CardComponent";
 import JokeCard from "@/components/card/JokeCard";
 import QuoteCard from "@/components/card/QuoteCard";
 import RiddleCard from "@/components/card/RiddleCard";
-import { jokeList, quoteList } from "@/utils/constants";
+import { jokeList, quoteList, riddleList } from "@/utils/constants";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -180,8 +179,8 @@ export default async function Home() {
 
         <div className="flex flex-col gap-2">
           <div className="grid grid-cols-1 gap-10 sm:grid-cols-2">
-            {quoteList.slice(0, 4).map((q, index) => (
-              <RiddleCard key={index} />
+            {riddleList.slice(0, 4).map((j, index) => (
+              <RiddleCard riddle={j.riddle} answer={j.answer} key={index} />
             ))}
           </div>
           <div className="flex items-center justify-end p-5 mr-[60px] md:mr-[80px]">
