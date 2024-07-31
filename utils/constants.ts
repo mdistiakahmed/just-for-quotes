@@ -106,78 +106,19 @@ export const quoteList = [
     quote: "A room without books is like a body without a soul.",
     author: "Marcus Tullius Cicero",
   },
+];
+
+export const jokeList = [
   {
-    quote: "Be the change that you wish to see in the world.",
-    author: " Mahatma Gandhi",
+    joke: `Why couldn't the lizard get a girlfriend?;Because he had a reptile dysfunction.`,
   },
   {
-    quote:
-      "If you want to know what a man's like, take a good look at how he treats his inferiors, not his equals.",
-    author: "J.K. Rowling",
+    joke: "How did Burger King get Dairy Queen pregnant?;He forgot to wrap his Whopper.",
   },
   {
-    quote:
-      "Your time is limited, so don't waste it living someone else's life. Don't be trapped by dogma – which is living with the results of other people's thinking.",
-    author: "Steve Jobs",
+    joke: `Knock, Knock;Who's there?;Alice.;Alice who?;Alice fair in love and war.`,
   },
   {
-    quote:
-      "Spread love everywhere you go. Let no one ever come to you without leaving happier. ",
-    author: "Mother Teresa",
-  },
-  {
-    quote:
-      "Darkness cannot drive out darkness: only light can do that. Hate cannot drive out hate: only love can do that. ",
-    author: "Martin Luther King Jr.",
-  },
-  {
-    quote: "The only thing we have to fear is fear itself.",
-    author: "Franklin D. Roosevelt",
-  },
-  { quote: "Well done is better than well said.", author: "Benjamin Franklin" },
-  {
-    quote:
-      "It is during our darkest moments that we must focus to see the light.",
-    author: "Aristotle",
-  },
-  {
-    quote:
-      "It is during our darkest moments that we must focus to see the light.",
-    author: "Aristotle",
-  },
-  {
-    quote:
-      "It is during our darkest moments that we must focus to see the light.",
-    author: "Aristotle",
-  },
-  {
-    quote:
-      "It is during our darkest moments that we must focus to see the light.",
-    author: "Aristotle",
-  },
-  {
-    quote:
-      "It is during our darkest moments that we must focus to see the light.",
-    author: "Aristotle",
-  },
-  {
-    quote:
-      "It is during our darkest moments that we must focus to see the light.",
-    author: "Aristotle",
-  },
-  {
-    quote:
-      "It is during our darkest moments that we must focus to see the light.",
-    author: "Aristotle",
-  },
-  {
-    quote:
-      "It is during our darkest moments that we must focus to see the light.",
-    author: "Aristotle",
-  },
-  {
-    quote:
-      "It is during our darkest moments that we must focus to see the light.",
-    author: "Aristotle",
+    joke: `Knock, Knock;Who's there?;Tank.;Tank who?;You're welcome.`,
   },
 ];

@@ -1,4 +1,3 @@
-import CardComponent from "@/components/card/CardComponent";
 import QuoteCard from "@/components/card/QuoteCard";
 import { getQuote } from "@/utils/getData";
 import Image from "next/image";

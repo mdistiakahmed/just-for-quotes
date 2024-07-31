@@ -80,7 +80,11 @@ const HeaderComponent = () => {
         <ul className="col-span-2 grid grid-cols-2 gap-4 my-6">
           {navOptions.map((o, index) => (
             <li className="flex items-center justify-center" key={index}>
-              <Link href={`/${o.path}`} className="text-white">
+              <Link
+                href={`${o.path}`}
+                className="text-white"
+                onClick={() => setIsMoreButtonClicked(false)}
+              >
                 <p className="font-bold text-center p-2 bg-[#a92e23] rounded-lg w-[90px] ">
                   {o.name}
                 </p>

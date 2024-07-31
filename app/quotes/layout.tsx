@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     siteName: "JustForQuotes",
     images: [
       {
-        url: "jfq_motivational.png",
+        url: "jfq.png",
         width: 1200,
         height: 630,
         alt: "Motivational quotes background",
