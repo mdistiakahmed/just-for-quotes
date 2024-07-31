@@ -28,3 +28,25 @@ export const getQuote = async (param: string) => {
     throw error;
   }
 };
+
+export const getJokes = async (param: string) => {
+  try {
+    let jokeList = [];
+
+    switch (param) {
+      case "dirty":
+        ({ jokeList } = await import("../data/jokes/dirty"));
+        break;
+      case "knockknock":
+        ({ jokeList } = await import("../data/jokes/knockknock"));
+        break;
+      default:
+        throw new Error(`No data file found for param: ${param}`);
+    }
+
+    return jokeList;
+  } catch (error) {
+    console.error(error);
+    throw error;
+  }
+};

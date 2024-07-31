@@ -6,25 +6,28 @@ export const navOptions = [
   { name: "Stories", path: "/stories" },
 ];
 
-interface CategoryMap {
-  [key: string]: string[];
-}
-
-export const categoryMap: CategoryMap = {
+export const categoryMap: any = {
   quotes: [
-    "Love",
-    "Success",
-    "Religion",
-    "Loneliness",
-    "Family",
+    { name: "Love", path: "Love" },
+    { name: "Success", path: "Success" },
+    { name: "Religion", path: "Religion" },
+    { name: "Loneliness", path: "Loneliness" },
+    { name: "Family", path: "Family" },
+
     // "Friends",
     // "Marriage",
     // "Others",
   ],
-  memes: ["Adult", "Job", "Family", "Friends", "Relationship", "memes"],
-  jokes: ["Adult", "Job", "Family", "Friends", "Relationship", "jokes"],
-  puzzles: ["Adult", "Job", "Family", "Friends", "Relationship", "puzzles"],
-  riddle: ["Adult", "Job", "Family", "Friends", "Relationship", "riddle"],
+  memes: ["Funny", "Relatable", "Work", "Animals", "Random"],
+  jokes: [
+    { name: "Dirty", path: "Dirty" },
+    { name: "Knock-Knock", path: "KnockKnock" },
+    // { name: "OneLiners", path: "OneLiners" },
+    // { name: "Dad Jokes", path: "Dad-Jokes" },
+    // { name: "Animal Jokes", path: "Animal-Jokes" },
+  ],
+  puzzles: ["Logic", "Math", "Word", "Visual", "Brain Teasers"],
+  riddle: ["Classic", "What Am I?", "Logic", "Math", "Funny"],
 };
 
 interface ImageMap {
@@ -72,6 +75,18 @@ export const quotePageMetaData: any = {
     desc: "Discover beautiful and inspiring family quotes that celebrate the love and bonds that unite us. Find comfort, joy, and inspiration in these heartfelt messages.",
   },
 };
+
+export const jokesPageMetaData: any = {
+  dirty: {
+    title: "Funny and Dirty Jokes ",
+    desc: "Explore a hilarious collection of funny and dirty jokes to spice up your day. Laugh out loud with our cheeky humor and share the fun with friends at JustForQuotes.",
+  },
+  knockknock: {
+    title: "Knock-Knock Jokes to Make You Laugh ",
+    desc: "Discover a fun collection of knock-knock jokes that will make you laugh out loud. Enjoy classic and new knock-knock jokes perfect for sharing with friends and family at JustForQuotes.",
+  },
+};
+
 export const quoteList = [
   {
     quote:

@@ -94,9 +94,9 @@ export default function Home() {
 
         <div className="flex flex-col gap-2">
           <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
-            {quoteList.slice(0, 4).map((q, index) => (
+            {/* {quoteList.slice(0, 4).map((q, index) => (
               <JokeCard key={index} />
-            ))}
+            ))} */}
           </div>
           <div className="flex items-center justify-end p-5 mr-[60px] md:mr-[80px]">
             <Link
