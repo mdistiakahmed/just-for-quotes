@@ -1,34 +1,25 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
-import { NextUIProvider } from "@nextui-org/react";
-import Footer from "@/components/footer/Footer";
-import HeaderComponent from "@/components/navbar/Header";
 import SecondaryHeader from "@/components/navbar/SecondaryHeader";
 import { categoryMap } from "@/utils/constants";
 
-const poppins = Poppins({
-  weight: ["400", "700"],
-  subsets: ["latin"],
-});
-
 export const metadata: Metadata = {
-  title: "Inspiring Quotes for Every Occasion | QuoteMaster",
+  title: "Motivational Quotes to Inspire and Uplift | JustForQuotes",
   description:
-    "Discover a vast collection of motivational, love, religious, marriage, family, and loneliness quotes to inspire and uplift your spirit.",
+    "Discover a vast collection of motivational quotes designed to inspire, uplift, and encourage you every day. Find your daily dose of motivation at JustForQuotes.",
   openGraph: {
-    title: "Inspiring Quotes for Every Occasion | QuoteMaster",
+    title: "Motivational Quotes to Inspire and Uplift | JustForQuotes",
     description:
-      "Explore an extensive library of quotes on motivation, love, religion, marriage, family, and loneliness. Find the perfect quote to inspire and uplift your spirit.",
+      "Browse our extensive library of motivational quotes that will uplift and inspire you. Start your day with positive thoughts and encouragement.",
     type: "website",
     locale: "en_US",
-    url: `https://justforquotes.com/`,
+    url: `https://justforquotes.com/quotes`,
     siteName: "JustForQuotes",
     images: [
       {
-        url: "motivational-quotes.PNG",
+        url: "jfq_motivational.png",
         width: 1200,
         height: 630,
-        alt: "Inspirational quotes background",
+        alt: "Motivational quotes background",
       },
     ],
   },
