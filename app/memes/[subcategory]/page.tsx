@@ -1,22 +1,22 @@
 import JokeCard from "@/components/card/JokeCard";
-import { jokesPageMetaData } from "@/utils/constants";
+import { jokesPageMetaData, memesPageMetaData } from "@/utils/constants";
 import { getJokes, getMemes } from "@/utils/getData";
 import Image from "next/image";
 
 const SubCategoryPage = async ({ params }: any) => {
   const { subcategory } = params;
   const memeList = await getMemes(subcategory);
-  //const { title, desc } = jokesPageMetaData["adult"] ;
+  const { title, desc } = memesPageMetaData[subcategory.toLowerCase()];
 
   return (
     <div className="flex flex-col gap-5">
-      {/* <h1 className="text-2xl font-bold text-center">{title}</h1> */}
+      <h1 className="text-2xl font-bold text-center">{title}</h1>
       <p className="text-center text-lg leading-relaxed text-gray-800 mt-4">
-        {/* {desc} */}
+        {desc}
       </p>
       <div className="flex justify-center">
         <Image
-          src={`/joke_${subcategory.toLowerCase()}.svg`}
+          src={`/meme_${subcategory.toLowerCase()}.svg`}
           alt={`${subcategory} quote`}
           height={40}
           width={40}

@@ -19,8 +19,8 @@ export const categoryMap: any = {
     // "Others",
   ],
   memes: [
-    { name: "Adult", path: "Adult" },
-    { name: "Anime", path: "Anime" },
+    { name: "Funny", path: "Funny" },
+    { name: "Couple", path: "Couple" },
   ],
   jokes: [
     { name: "Dirty", path: "Dirty" },
@@ -91,6 +91,17 @@ export const jokesPageMetaData: any = {
   knockknock: {
     title: "Knock-Knock Jokes to Make You Laugh ",
     desc: "Discover a fun collection of knock-knock jokes that will make you laugh out loud. Enjoy classic and new knock-knock jokes perfect for sharing with friends and family at JustForQuotes.",
+  },
+};
+
+export const memesPageMetaData: any = {
+  funny: {
+    title: "Funny Memes Collection - Laugh Out Loud Memes",
+    desc: "Explore our funny memes collection to bring a smile to your face. Find hilarious, laugh out loud memes and share them with your friends.",
+  },
+  couple: {
+    title: "Funny Couples Memes - Hilarious Memes for Couples",
+    desc: "Discover the best funny couples memes that will make you and your partner laugh. Enjoy our collection of hilarious memes about relationships and love.",
   },
 };
 
