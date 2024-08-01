@@ -1,4 +1,7 @@
 import Link from "next/link";
+import { FaFacebook } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -22,10 +25,7 @@ const Footer = () => {
             rel="noopener noreferrer"
             className="text-lg hover:text-gray-400"
           >
-            {/* <FacebookIcon
-              sx={{ color: "#006fee", background: "white" }}
-              className="rounded-md"
-            /> */}
+            <FaFacebook />
           </a>
           <a
             href="https://twitter.com"
@@ -33,10 +33,7 @@ const Footer = () => {
             rel="noopener noreferrer"
             className="text-lg hover:text-gray-400"
           >
-            {/* <YouTubeIcon
-              sx={{ color: "#bc002d", background: "white" }}
-              className="rounded-md"
-            /> */}
+            <FaSquareXTwitter />
           </a>
           <a
             href="https://www.linkedin.com/company/babynamenestlings/about"
@@ -44,11 +41,20 @@ const Footer = () => {
             rel="noopener noreferrer"
             className="text-lg hover:text-gray-400"
           >
-            {/* <LinkedInIcon
-              sx={{ color: "#006fee", background: "white" }}
-              className="rounded-md"
-            /> */}
+            <FaLinkedin />
           </a>
+        </div>
+
+        <div className="flex mt-4 md:mt-0 gap-2">
+          <Link href="/about">
+            <p className="underline">About</p>
+          </Link>
+          <Link href="/about/privacy">
+            <p className="underline">Privacy</p>
+          </Link>
+          <Link href="/about/contact">
+            <p className="underline">Contact</p>
+          </Link>
         </div>
       </div>
     </footer>
