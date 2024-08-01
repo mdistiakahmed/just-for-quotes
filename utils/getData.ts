@@ -72,3 +72,22 @@ export const getRiddles = async (param: string) => {
     throw error;
   }
 };
+
+export const getMemes = async (param: string) => {
+  try {
+    let memeList = [];
+
+    switch (param) {
+      case "adult":
+        ({ memeList } = await import("../data/memes/adult"));
+        break;
+      default:
+        throw new Error(`No data file found for param: ${param}`);
+    }
+
+    return memeList;
+  } catch (error) {
+    console.error(error);
+    throw error;
+  }
+};

@@ -18,7 +18,10 @@ export const categoryMap: any = {
     // "Marriage",
     // "Others",
   ],
-  memes: ["Funny", "Relatable", "Work", "Animals", "Random"],
+  memes: [
+    { name: "Adult", path: "Adult" },
+    { name: "Anime", path: "Anime" },
+  ],
   jokes: [
     { name: "Dirty", path: "Dirty" },
     { name: "Knock-Knock", path: "KnockKnock" },
