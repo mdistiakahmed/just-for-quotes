@@ -44,14 +44,14 @@ const page = async () => {
   return (
     <div className="flex flex-col gap-5">
       <h1 className="text-2xl font-bold text-center">
-        Riddle Me This: Your Ultimate Riddle Challenge
+        Memes - Explore the Best Funny, Happy Birthday, Cat, Thumbs Up, and
+        Drake Memes | JustForQuotes.com
       </h1>
       <p className="text-center text-lg leading-relaxed text-gray-800 mt-4">
-        Dive into a world of mind-boggling puzzles with our vast collection of
-        riddles. From classic brain teasers to hilarious jokes, we&apos;ve got
-        something for everyone. Challenge your wit, sharpen your mind, and share
-        the fun with friends. Solve riddles, laugh out loud, and become a riddle
-        master today!
+        Discover the ultimate collection of memes at JustForQuotes.com. From
+        hilarious funny memes to heartwarming happy birthday memes, adorable cat
+        memes, classic thumbs up memes, and iconic Drake memes, we have it all.
+        Dive into the world of memes and share the laughter with your friends.
       </p>
       {categoryMemesSection(funnyMemeList.slice(0, 5), "Funny")}
       {categoryMemesSection(coupleMemeList.slice(0, 5), "Couple")}

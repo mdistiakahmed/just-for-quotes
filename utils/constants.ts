@@ -25,7 +25,7 @@ export const categoryMap: any = {
     { name: "Thumbs up", path: "thumbs-up" },
     { name: "Drake", path: "drake" },
     { name: "Spiderman ", path: "spiderman " },
-    { name: "Side eye ", path: "side-eye " },
+    { name: "Side eye", path: "side-eye " },
   ],
   jokes: [
     { name: "Dirty", path: "Dirty" },
@@ -102,11 +102,24 @@ export const jokesPageMetaData: any = {
 export const memesPageMetaData: any = {
   funny: {
     title: "Funny Memes Collection - Laugh Out Loud Memes",
-    desc: "Explore our funny memes collection to bring a smile to your face. Find hilarious, laugh out loud memes and share them with your friends.",
-  },
-  couple: {
-    title: "Funny Couples Memes - Hilarious Memes for Couples",
-    desc: "Discover the best funny couples memes that will make you and your partner laugh. Enjoy our collection of hilarious memes about relationships and love.",
+    description:
+      "One-stop shop for the freshest, funniest memes around.Excessive meme consumption may result in uncontrollable laughter and a serious case of happiness.",
+    detailed:
+      "Tired of the daily grind? Need a good laugh? You've come to the right place! This page is your one-stop shop for the freshest, funniest memes around. From relatable struggles to absurd humor, we've got you covered. Get ready to scroll, chuckle, and share with your friends. Warning: Excessive meme consumption may result in uncontrollable laughter and a serious case of happiness.",
+    facts: [
+      "The term 'meme' was first coined by Richard Dawkins in his 1976 book 'The Selfish Gene.'",
+      "Laughing at a funny meme releases endorphins, the body's natural painkillers, contributing to a sense of well-being.",
+      "A funny meme can go viral within hours, spreading across social media platforms like wildfire.",
+      "Funny memes have been shown to boost mood and reduce stress.",
+      "Funny memes often reflect current events, societal trends, and cultural phenomena.",
+      "Funny memes are a testament to human creativity, often involving clever wordplay and visual gags.",
+      "Sharing funny memes creates a sense of community and connection.",
+      "Brands and businesses use funny memes for marketing purposes.",
+      "Despite language and cultural differences, funny memes have a universal appeal.",
+      "Funny memes often introduce new slang and phrases into everyday language.",
+      "Funny memes are used in educational settings to make learning more engaging.",
+      "Sharing and enjoying memes together strengthens social bonds and creates a sense of community.",
+    ],
   },
 };
 

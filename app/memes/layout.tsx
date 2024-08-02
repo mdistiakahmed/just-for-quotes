@@ -3,13 +3,15 @@ import SecondaryHeader from "@/components/navbar/SecondaryHeader";
 import { categoryMap } from "@/utils/constants";
 
 export const metadata: Metadata = {
-  title: "Motivational Quotes to Inspire and Uplift | JustForQuotes",
+  title:
+    "Memes - Explore the Best Funny, Happy Birthday, Cat, Thumbs Up, and Drake Memes | JustForQuotes.com",
   description:
-    "Discover a vast collection of motivational quotes designed to inspire, uplift, and encourage you every day. Find your daily dose of motivation at JustForQuotes.",
+    "Discover the ultimate collection of memes at JustForQuotes.com. From hilarious funny memes to heartwarming happy birthday memes, adorable cat memes, classic thumbs up memes, and iconic Drake memes, we have it all. Dive into the world of memes and share the laughter with your friends.",
   openGraph: {
-    title: "Motivational Quotes to Inspire and Uplift | JustForQuotes",
+    title:
+      "Memes - Explore the Best Funny, Happy Birthday, Cat, Thumbs Up, and Drake Memes | JustForQuotes.com",
     description:
-      "Browse our extensive library of motivational quotes that will uplift and inspire you. Start your day with positive thoughts and encouragement.",
+      "Discover the ultimate collection of memes at JustForQuotes.com. From hilarious funny memes to heartwarming happy birthday memes, adorable cat memes, classic thumbs up memes, and iconic Drake memes, we have it all. Dive into the world of memes and share the laughter with your friends.",
     type: "website",
     locale: "en_US",
     url: `https://justforquotes.com/quotes`,
