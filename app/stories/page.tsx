@@ -39,7 +39,7 @@ const StoryPage = async () => {
               const { heroImage } = article;
               return (
                 <Link
-                  href={`/articles/${article?.slug?.current}`}
+                  href={`/stories/${article?.slug?.current}`}
                   key={index}
                   className="bg-white shadow-md rounded-lg overflow-hidden transform transition duration-500 hover:scale-105 cursor-pointer"
                 >
