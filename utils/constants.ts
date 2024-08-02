@@ -173,22 +173,76 @@ export const memesPageMetaData: any = {
     facts: [],
   },
   drake: {
-    title: "",
-    description: ``,
-    detailed: ``,
-    facts: [],
+    title: "Drake Memes: The Ultimate Collection of funny drake meme",
+    description: `Looking for the funniest Drake memes on the internet? 
+    Look no further! Our site is packed with hilarious Drake meme pictures and GIFs. `,
+    detailed: `Looking for the funniest Drake memes on the internet? 
+    Look no further! Our site is packed with hilarious Drake meme pictures and GIFs. 
+    From iconic "Hotline Bling" moments to the latest viral trends, we've got you covered. 
+    Share these laugh-out-loud memes with your friends and join the Drake meme craze. 
+    Whether you're a die-hard Drake fan or just love a good meme, you'll find something to love on our site.`,
+    facts: [
+      `Drake's expressive facial expressions, often paired with relatable lyrics, have made him an ideal subject for meme creation.`,
+      `The music video for "Hotline Bling" was a pivotal moment in Drake's meme career, with its distinctive visuals providing endless meme material.`,
+      `Despite the ever-changing landscape of internet trends, Drake memes continue to be relevant and engaging.`,
+      `Drake memes: Where every facial expression becomes a relatable life moment.`,
+      `Drake: The king of music and the accidental king of memes.`,
+      `From 'Hotline Bling' to countless variations, Drake's meme legacy is undeniable.`,
+      `"Started from the bottom now we're here." — A classic line from Drake's song, ideal for celebrating progress or success.`,
+      `"You only live once, that's the motto." — From Drake's hit song "The Motto," perfect for encouraging a bold attitude.`,
+      `"Know yourself, know your worth." — A motivational line from Drake, great for promoting self-confidence.`,
+      `"I got way too many people here right now that I didn't know last year." — Reflects on change and growth, ideal for memes about new experiences.`,
+      `"Is there more to life than growing up?" — A contemplative quote that can be used to reflect on life's deeper questions.`,
+      `"You know it's real when you are who you think you are."`,
+    ],
   },
   spiderman: {
-    title: "",
-    description: ``,
-    detailed: ``,
-    facts: [],
+    title: "Spiderman Memes: Your Daily Dose of Web-Slinging Humor",
+    description: `Get ready to swing into a world of laughter with our epic collection of Spider-Man memes! 
+    From classic comic book gags to the latest Marvel movie moments, we've got all the funniest Spidey memes in one place. `,
+    detailed: `Get ready to swing into a world of laughter with our epic collection of Spider-Man memes! 
+    From classic comic book gags to the latest Marvel movie moments, we've got all the funniest Spidey memes in one place. 
+    Whether you're a die-hard Marvel fan or just love a good laugh, you'll be hooked on our web of humor. 
+    Share these hilarious Spider-Man memes with your friends and let the friendly neighborhood Spider-Man brighten your day!`,
+    facts: [
+      `One of the most iconic Spiderman memes features the character pointing at himself, often used to highlight a relatable situation or compare two options.`,
+      `Spiderman's relatable character and iconic poses have led to countless interpretations and adaptations of his image in meme culture.`,
+      `The character's popularity has led to crossovers with other superheroes and pop culture icons, expanding the meme's reach.`,
+      `Spiderman's complex personality, balancing heroism with everyday struggles, is often mirrored in the humor of his memes.`,
+      `"With great power, there must also come great responsibility." - Spiderman`,
+      `"Face it, tiger, I'm the best there is at what I do." - Spiderman`,
+      `"I'm nothing without this mask." - Spiderman`,
+      `"With great power, there must also come great responsibility." - Spiderman`,
+      `"With great power, there must also come great responsibility." - Spiderman`,
+      `Spider-Man probably has the best workout routine ever. Imagine doing pull-ups on skyscrapers!`,
+      `Imagine the embarrassment of your mask slipping off during a big fight. Spider-Man has probably experienced this more than once.`,
+      `Being Spider-Man must be like being a masked reality TV star. Constant paparazzi and autograph seekers, but no privacy.`,
+      `Spider-Man probably gets some...interesting fan mail from his villains.`,
+      `New York City traffic is bad enough, but imagine trying to navigate it while swinging through the air.`,
+    ],
   },
+
   "side-eye": {
-    title: "",
-    description: ``,
-    detailed: ``,
-    facts: [],
+    title: "Side Eye Meme: The Ultimate Collection of Shady Looks",
+    description: `Get ready to roll your eyes with laughter! 
+    Our side eye meme collection is packed with hilarious images and GIFs that capture the essence of shade and sass.`,
+    detailed: `Get ready to roll your eyes with laughter! 
+    Our side eye meme collection is packed with hilarious images and GIFs that capture the essence of shade and sass.
+    From subtle glances to full-on eye rolls, we've got all the side eye you can handle. 
+    Share these relatable and funny memes with your friends and let the side eye commence! 
+    Whether you're a seasoned meme lover or new to the trend, you'll be hooked on these shady looks.`,
+    facts: [
+      `The side-eye meme often features images or GIFs of people giving a skeptical or judgmental sideways glance. It's used to express disbelief, annoyance, or sarcasm.`,
+      `The side-eye meme has become a staple in internet culture, frequently used in social media and messaging to react to questionable or irritating statements and situations.`,
+      `Side eye memes perfectly capture the art of saying so much without uttering a word.`,
+      `Everyone has given or received a side eye at some point, making these memes universally relatable.`,
+      `Side eye transcends cultural and linguistic barriers, making it a truly global meme format.`,
+      `Side eye memes are the epitome of subtle shade, allowing users to express disapproval without confrontation.`,
+      `The side eye can be paired with countless scenarios, ensuring a never-ending supply of fresh meme content.`,
+      `The meme typically includes celebrities, fictional characters, or animated figures who are known for their expressive side-eye looks. Examples include famous reactions from celebrities like Beyoncé or characters from popular TV shows and movies.`,
+      `The side-eye is a non-verbal cue that conveys suspicion or disapproval, making it an effective way to visually communicate negative emotions or judgments.`,
+      `Variations of the side-eye meme can include captions that enhance the expression of skepticism or disapproval, often adding humor or wit to the reaction.`,
+    ],
   },
 };
 
