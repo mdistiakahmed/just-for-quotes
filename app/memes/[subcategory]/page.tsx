@@ -71,7 +71,7 @@ const SubCategoryPage = async ({ params }: any) => {
           Interesting Facts About Funny Memes
         </h2>
         <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 list-disc list-inside text-gray-800 leading-loose">
-          {facts.map((fact, index) => (
+          {facts.map((fact: any, index: any) => (
             <li
               key={index}
               className="mb-2 rounded-lg shadow-md bg-white px-5 py-3 hover:shadow-lg transition duration-300 ease-in-out"
