@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import SecondaryHeader from "@/components/navbar/SecondaryHeader";
 import { categoryMap } from "@/utils/constants";
+import Breadcrumb from "@/components/breadcrumbs/Breadcrumb";
 
 export const metadata: Metadata = {
   title: "Motivational Quotes to Inspire and Uplift | JustForQuotes",
@@ -34,6 +35,7 @@ export default function QuoteLayout({
 
   return (
     <section>
+      <SecondaryHeader />
       <div className="flex items-center justify-center w-full">
         <div className=" w-[95vw] md:w-[70vw] py-[20px]">{children}</div>
       </div>

@@ -43,19 +43,21 @@ const SecondaryHeader = ({ subNavList }: any) => {
   return (
     <header className={`${dancingScript.className} sticky top-0 z-10 bg-white`}>
       <nav className="p-2 sticky top-0">
-        <ul className=" flex gap-4 overflow-auto no-scrollbar">
-          {subNavList.map((s: any, index: any) => (
-            <li
-              className={`px-2 rounded-xl bg-[#ffe7e7] text-[#ff1414] text-[24px]  cursor-pointer border-[1px] hover:border-[#ff1414] ${
-                s.path === selectedSubNav ? "border-[#ff1414]" : ""
-              }`}
-              key={index}
-              onClick={() => navigateToSubNavCategory(s.path)}
-            >
-              {s.name}
-            </li>
-          ))}
-        </ul>
+        {subNavList && (
+          <ul className=" flex gap-4 overflow-auto no-scrollbar">
+            {subNavList.map((s: any, index: any) => (
+              <li
+                className={`px-2 rounded-xl bg-[#ffe7e7] text-[#ff1414] text-[24px]  cursor-pointer border-[1px] hover:border-[#ff1414] ${
+                  s.path === selectedSubNav ? "border-[#ff1414]" : ""
+                }`}
+                key={index}
+                onClick={() => navigateToSubNavCategory(s.path)}
+              >
+                {s.name}
+              </li>
+            ))}
+          </ul>
+        )}
       </nav>
       <Breadcrumb />
     </header>
