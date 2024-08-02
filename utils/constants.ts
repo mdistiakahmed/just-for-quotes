@@ -19,8 +19,13 @@ export const categoryMap: any = {
     // "Others",
   ],
   memes: [
-    { name: "Funny", path: "Funny" },
-    { name: "Couple", path: "Couple" },
+    { name: "Funny", path: "funny" },
+    { name: "Birthday", path: "birthday" },
+    { name: "Cat ", path: "cat " },
+    { name: "Thumbs up", path: "thumbs-up" },
+    { name: "Drake", path: "drake" },
+    { name: "Spiderman ", path: "spiderman " },
+    { name: "Side eye ", path: "side-eye " },
   ],
   jokes: [
     { name: "Dirty", path: "Dirty" },

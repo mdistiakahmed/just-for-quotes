@@ -24,15 +24,13 @@ const Breadcrumb = () => {
   }
 
   return (
-    <Breadcrumbs className="px-4 py-1 break-words">
+    <Breadcrumbs className="px-4 py-1">
       <BreadcrumbItem key={1000}>
         <Link href="/">Home</Link>
       </BreadcrumbItem>
       {breadcrumbs.map((breadcrumb, index) => (
-        <BreadcrumbItem key={index} className="break-words">
-          <Link href={breadcrumb.href} className="break-words">
-            {breadcrumb.displayName}
-          </Link>
+        <BreadcrumbItem key={index}>
+          <Link href={breadcrumb.href}>{breadcrumb.displayName}</Link>
         </BreadcrumbItem>
       ))}
     </Breadcrumbs>

@@ -55,7 +55,35 @@ export const post = {
       title: "Body",
       type: "array",
       of: [
-        { type: "block" },
+        {
+          type: "block",
+          marks: {
+            decorators: [
+              { title: "Strong", value: "strong" },
+              { title: "Emphasis", value: "em" },
+            ],
+            annotations: [
+              {
+                name: "link",
+                type: "object",
+                title: "URL",
+                fields: [
+                  {
+                    name: "href",
+                    type: "url",
+                    title: "URL",
+                  },
+                  {
+                    title: "Open in new tab",
+                    name: "blank",
+                    type: "boolean",
+                  },
+                ],
+              },
+            ],
+          },
+        },
+
         {
           type: "image",
           fields: [{ type: "text", name: "alt", title: "Alt" }],
