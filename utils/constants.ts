@@ -143,15 +143,33 @@ export const memesPageMetaData: any = {
     ],
   },
   cat: {
-    title: "",
-    description: ``,
-    detailed: ``,
-    facts: [],
+    title: "The Funniest Cat Memes Online",
+    description: `Discover the funniest cat memes online! Laugh out loud at hilarious cat pictures and captions. 
+    Our website is your daily dose of cat cuteness and comedy. Shareable, relatable, and guaranteed to brighten your day.`,
+    detailed: `Discover the funniest cat memes online! Laugh out loud at hilarious cat pictures and captions. 
+    Our website is your daily dose of cat cuteness and comedy. Shareable, relatable, and guaranteed to brighten your day. 
+    From grumpy to adorable, we have it all. Dive into the world of cat memes now!`,
+    facts: [
+      `There's a cat meme for every occasion: Whether you're feeling happy, sad, or relatable, there's a cat meme out there to capture your mood.`,
+      `Cats are the internet's golden ticket to humor. Memes are just the proof.`,
+      `A cat meme a day keeps the boredom away.`,
+      `In a world full of chaos, cat memes bring us together.`,
+      `From LOLcats to grumpy kittens, cat memes have captured the world's heart.`,
+      `A well-timed cat meme can be a powerful antidote to stress.`,
+      `Just like humans, cats dream, often twitching their ears and paws during REM sleep.`,
+      `Cats have been domesticated for thousands of years and were revered in ancient Egypt.`,
+      `A group of cats is called a clowder: Just imagine a bunch of cats causing chaos together.`,
+      `Some cats are secretly ninjas: Those silent pounces and disappearances are proof.`,
+    ],
   },
   "thumbs-up": {
-    title: "",
-    description: ``,
-    detailed: ``,
+    title: "Thumbs Up Memes: Funny, Relatable, and Shareable",
+    description: `Get ready to give a big thumbs up to our hilarious collection of thumbs up memes! 
+    From funny reactions to celebratory moments, we've got the perfect meme for every occasion. 
+    Share the laughter with your friends and family.`,
+    detailed: `Get ready to give a big thumbs up to our hilarious collection of thumbs up memes! 
+    From funny reactions to celebratory moments, we've got the perfect meme for every occasion. 
+    Share the laughter with your friends and family.`,
     facts: [],
   },
   drake: {
