@@ -21,7 +21,7 @@ export async function generateMetadata({
       siteName: "JustForQuotes",
       images: [
         {
-          url: "/meme.webp",
+          url: `/meme_${subcategory.toLowerCase()}.svg`,
           width: 1200,
           height: 630,
           alt: "Robots and man anime meme",
@@ -46,14 +46,14 @@ const SubCategoryPage = async ({ params }: any) => {
       <div className="flex justify-center">
         <Image
           src={`/meme_${subcategory.toLowerCase()}.svg`}
-          alt={`${subcategory} quote`}
+          alt={`${subcategory} meme`}
           height={40}
           width={40}
           className="h-[200px] w-[200px]"
         />
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-16">
-        {memeList.map((m, index) => (
+        {memeList.map((m: any, index: any) => (
           <div key={index} className="relative   h-[400px] ">
             <Image
               src={m.url}
@@ -68,7 +68,7 @@ const SubCategoryPage = async ({ params }: any) => {
 
       <div className="mt-10 px-5 py-10 bg-gray-100 rounded-lg shadow-md">
         <h2 className="text-xl font-bold text-center mb-5">
-          Interesting Facts About Funny Memes
+          Interesting facts about {subcategory.split("-").join(" ")} memes
         </h2>
         <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 list-disc list-inside text-gray-800 leading-loose">
           {facts.map((fact: any, index: any) => (

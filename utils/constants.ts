@@ -21,11 +21,11 @@ export const categoryMap: any = {
   memes: [
     { name: "Funny", path: "funny" },
     { name: "Birthday", path: "birthday" },
-    { name: "Cat ", path: "cat " },
+    { name: "Cat", path: "cat" },
     { name: "Thumbs up", path: "thumbs-up" },
     { name: "Drake", path: "drake" },
-    { name: "Spiderman ", path: "spiderman " },
-    { name: "Side eye", path: "side-eye " },
+    { name: "Spiderman ", path: "spiderman" },
+    { name: "Side eye", path: "side-eye" },
   ],
   jokes: [
     { name: "Dirty", path: "Dirty" },
@@ -120,6 +120,57 @@ export const memesPageMetaData: any = {
       "Funny memes are used in educational settings to make learning more engaging.",
       "Sharing and enjoying memes together strengthens social bonds and creates a sense of community.",
     ],
+  },
+  birthday: {
+    title: "Birthday Memes: Hilarious Memes to Celebrate Your Special Day",
+    description: `Looking for the ultimate dose of laughter to brighten up your birthday? 
+      Our page is your go-to destination for the funniest birthday memes around.`,
+    detailed: `Looking for the ultimate dose of laughter to brighten up your birthday? 
+      Our page is your go-to destination for the funniest birthday memes around. 
+      From classic birthday jokes to the latest internet trends, we've got it all. 
+      Share these hilarious memes with your friends and family to create unforgettable birthday memories. 
+      Whether you're celebrating your own special day or someone else's, 
+      our birthday memes are guaranteed to bring smiles and laughter to everyone involved.`,
+    facts: [
+      "A happy birthday meme is the perfect way to start any birthday celebration.",
+      "Happy Birthday memes are one of the most popular categories of memes, used widely to celebrate friends' and family members' birthdays online.",
+      "Make someone's birthday unforgettable with a personalized happy birthday meme.",
+      "A funny or touching birthday meme can leave a lasting impression, making the recipient remember the sender fondly.",
+      `"Count your life by smiles, not tears. Count your age by friends, not years. Happy birthday!" — John Lennon`,
+      `"The more you praise and celebrate your life, the more there is in life to celebrate." — Oprah Winfrey`,
+      `"A birthday is just the first day of another 365-day journey around the sun. Enjoy the trip." — Unknown`,
+      `A happy birthday meme is worth a thousand words. Surprise your loved ones with a creative happy birthday meme.`,
+    ],
+  },
+  cat: {
+    title: "",
+    description: ``,
+    detailed: ``,
+    facts: [],
+  },
+  "thumbs-up": {
+    title: "",
+    description: ``,
+    detailed: ``,
+    facts: [],
+  },
+  drake: {
+    title: "",
+    description: ``,
+    detailed: ``,
+    facts: [],
+  },
+  spiderman: {
+    title: "",
+    description: ``,
+    detailed: ``,
+    facts: [],
+  },
+  "side-eye": {
+    title: "",
+    description: ``,
+    detailed: ``,
+    facts: [],
   },
 };
 

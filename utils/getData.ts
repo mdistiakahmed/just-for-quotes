@@ -75,7 +75,7 @@ export const getRiddles = async (param: string) => {
 
 export const getMemes = async (param: string) => {
   try {
-    let memeList = [];
+    let memeList: any = [];
 
     switch (param) {
       case "funny":
@@ -83,6 +83,18 @@ export const getMemes = async (param: string) => {
         break;
       case "couple":
         ({ memeList } = await import("../data/memes/couple"));
+        break;
+      case "birthday":
+        break;
+      case "cat":
+        break;
+      case "thumbs-up":
+        break;
+      case "drake":
+        break;
+      case "spiderman":
+        break;
+      case "side-eye":
         break;
       default:
         throw new Error(`No data file found for param: ${param}`);
