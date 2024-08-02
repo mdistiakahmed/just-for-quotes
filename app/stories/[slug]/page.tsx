@@ -69,32 +69,28 @@ const SingleArticlePage = async ({ params }: any) => {
   const dimensions = extractImageDimensions(heroImage.asset._ref);
   return (
     <div>
-      <div className="flex items-center justify-center w-full">
-        <div className=" w-[95vw] md:w-[70vw] p-[10px] text-black">
-          <div className="flex flex-col gap-6 text-center md:text-left">
-            <h1 className="text-2xl font-bold text-center leading-relaxed">
-              {post?.title}
-            </h1>
+      <div className="flex flex-col gap-6 text-center md:text-left">
+        <h1 className="text-2xl font-bold text-center leading-relaxed">
+          {post?.title}
+        </h1>
 
-            <div className="w-full flex justify-center">
-              {heroImage && heroImage.asset && (
-                <Image
-                  src={urlForImage(heroImage)}
-                  alt={heroImage.alt || "post"}
-                  width={dimensions.width}
-                  height={dimensions.height}
-                  className="text-center h-auto w-auto"
-                />
-              )}
-            </div>
+        <div className="w-full flex justify-center">
+          {heroImage && heroImage.asset && (
+            <Image
+              src={urlForImage(heroImage)}
+              alt={heroImage.alt || "post"}
+              width={dimensions.width}
+              height={dimensions.height}
+              className="text-center h-auto w-auto"
+            />
+          )}
+        </div>
 
-            <div className="prose prose-lg text-justify min-w-full">
-              <PortableText
-                value={post?.body}
-                components={myPortableTextComponents}
-              />
-            </div>
-          </div>
+        <div className="prose prose-lg text-justify min-w-full">
+          <PortableText
+            value={post?.body}
+            components={myPortableTextComponents}
+          />
         </div>
       </div>
     </div>
