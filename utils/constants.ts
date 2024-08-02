@@ -8,15 +8,17 @@ export const navOptions = [
 
 export const categoryMap: any = {
   quotes: [
-    { name: "Love", path: "Love" },
-    { name: "Success", path: "Success" },
-    { name: "Religion", path: "Religion" },
-    { name: "Loneliness", path: "Loneliness" },
-    { name: "Family", path: "Family" },
-
-    // "Friends",
-    // "Marriage",
-    // "Others",
+    { name: "Inspirational", path: "inspirational" },
+    { name: "Love", path: "love" },
+    { name: "Funny", path: "funny" },
+    { name: "Famous", path: "famous" },
+    { name: "Good morning", path: "good-morning" },
+    { name: "Life", path: "life" },
+    { name: "Birthday", path: "birthday" },
+    { name: "Self Love", path: "self-love" },
+    { name: "Best Friend", path: "best-friend" },
+    { name: "Kindness", path: "kindness" },
+    { name: "Leadership", path: "leadership" },
   ],
   memes: [
     { name: "Funny", path: "funny" },
@@ -28,16 +30,16 @@ export const categoryMap: any = {
     { name: "Side eye", path: "side-eye" },
   ],
   jokes: [
-    { name: "Dirty", path: "Dirty" },
-    { name: "Knock-Knock", path: "KnockKnock" },
-    // { name: "OneLiners", path: "OneLiners" },
-    // { name: "Dad Jokes", path: "Dad-Jokes" },
-    // { name: "Animal Jokes", path: "Animal-Jokes" },
+    { name: "Dad", path: "dad" },
+    { name: "Funny", path: "funny" },
+    { name: "Knock knock", path: "knock-knock" },
+    { name: "Kids", path: "kids" },
+    { name: "Adult", path: "adult" },
   ],
-  puzzles: ["Logic", "Math", "Word", "Visual", "Brain Teasers"],
   riddles: [
-    { name: "Classic", path: "Classic" },
     { name: "Funny", path: "Funny" },
+    { name: "Kids", path: "kids" },
+    { name: "Adult", path: "adult" },
     // { name: "Kids", path: "Kids" },
   ],
 };

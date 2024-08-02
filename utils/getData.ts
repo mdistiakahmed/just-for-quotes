@@ -3,19 +3,19 @@ export const getQuote = async (param: string) => {
     let quoteList = [];
 
     switch (param) {
-      case "love":
+      case "inspirational":
         ({ quoteList } = await import("../data/quotes/love"));
         break;
-      case "loneliness":
+      case "love":
         ({ quoteList } = await import("../data/quotes/loneliness"));
         break;
-      case "success":
+      case "funny":
         ({ quoteList } = await import("../data/quotes/success"));
         break;
-      case "religion":
+      case "famous":
         ({ quoteList } = await import("../data/quotes/religion"));
         break;
-      case "family":
+      case "good-morning":
         ({ quoteList } = await import("../data/quotes/family"));
         break;
       default:
@@ -34,10 +34,10 @@ export const getJokes = async (param: string) => {
     let jokeList = [];
 
     switch (param) {
-      case "dirty":
+      case "funny":
         ({ jokeList } = await import("../data/jokes/dirty"));
         break;
-      case "knockknock":
+      case "knock-knock":
         ({ jokeList } = await import("../data/jokes/knockknock"));
         break;
       default:
@@ -56,11 +56,14 @@ export const getRiddles = async (param: string) => {
     let riddleList = [];
 
     switch (param) {
-      case "classic":
-        ({ riddleList } = await import("../data/riddles/classic"));
-        break;
       case "funny":
         ({ riddleList } = await import("../data/riddles/funny"));
+        break;
+      case "adult":
+        ({ riddleList } = await import("../data/riddles/classic"));
+        break;
+      case "kids":
+        ({ riddleList } = await import("../data/riddles/classic"));
         break;
       default:
         throw new Error(`No data file found for param: ${param}`);

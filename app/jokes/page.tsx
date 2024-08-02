@@ -4,8 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 const JokesPage = async () => {
-  const dirtyJokesList = await getJokes("dirty");
-  const knockknockJokesList = await getJokes("knockknock");
+  const dirtyJokesList = await getJokes("funny");
+  const knockknockJokesList = await getJokes("knock-knock");
 
   const categoryJokesSection = (catJokeList: any, cat: any) => {
     return (

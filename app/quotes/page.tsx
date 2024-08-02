@@ -5,11 +5,11 @@ import Link from "next/link";
 import React from "react";
 
 const QuotePage = async () => {
-  const loveQuoteList = await getQuote("love");
-  const lonelinessQuoteList = await getQuote("loneliness");
-  const successQuoteList = await getQuote("success");
-  const religionQuoteList = await getQuote("religion");
-  const familyQuoteList = await getQuote("family");
+  const loveQuoteList = await getQuote("inspirational");
+  const lonelinessQuoteList = await getQuote("love");
+  const successQuoteList = await getQuote("funny");
+  const religionQuoteList = await getQuote("famous");
+  const familyQuoteList = await getQuote("good-morning");
 
   const categoryQuoteSection = (catQuoteList: any, cat: any) => {
     return (

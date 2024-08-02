@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const RiddleHomePage = async () => {
-  const classicRiddleList = await getRiddles("classic");
+  const classicRiddleList = await getRiddles("adult");
   const funnyRiddleList = await getRiddles("funny");
 
   const categoryRiddleSection = (catRiddleList: any, cat: any) => {
