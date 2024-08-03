@@ -23,6 +23,16 @@ export default async function Home() {
           riddles. Your go-to source for inspiration and entertainment.
         </p>
 
+        <div className="flex items-center justify-center">
+          <Image
+            src={"/quotes_inspirational.svg"}
+            alt="nature"
+            height={40}
+            width={40}
+            className="h-[300px] w-[400px]"
+          />
+        </div>
+
         {/* motivatoin */}
         <Link href={`/quotes`} className="cursor-pointer hover:text-[#d33a2c]">
           <div className="flex items-center justify-center">
@@ -60,11 +70,11 @@ export default async function Home() {
 
         <div className="flex items-center justify-center">
           <Image
-            src={"/quotes_inspirational.svg"}
-            alt="nature"
+            src={"/quotes_funny.svg"}
+            alt="happy cat"
             height={40}
             width={40}
-            className="h-[300px] w-[400px]"
+            className="h-[300px] w-[300px]"
           />
         </div>
 
@@ -105,6 +115,16 @@ export default async function Home() {
               See More
             </Link>
           </div>
+        </div>
+
+        <div className="flex items-center justify-center">
+          <Image
+            src={"/meme_funny.svg"}
+            alt="nature"
+            height={40}
+            width={40}
+            className="h-[300px] w-[400px]"
+          />
         </div>
 
         {/* Memes */}
@@ -154,6 +174,16 @@ export default async function Home() {
           </div>
         </div>
 
+        <div className="flex items-center justify-center">
+          <Image
+            src={"/riddles_kids.svg"}
+            alt="nature"
+            height={40}
+            width={40}
+            className="h-[300px] w-[400px]"
+          />
+        </div>
+
         {/* Riddles */}
 
         <Link href={`/riddles`} className="cursor-pointer hover:text-[#d33a2c]">
@@ -191,16 +221,6 @@ export default async function Home() {
               See More
             </Link>
           </div>
-        </div>
-
-        <div className="flex items-center justify-center">
-          <Image
-            src={"/quotes_funny.svg"}
-            alt="happy cat"
-            height={40}
-            width={40}
-            className="h-[300px] w-[300px]"
-          />
         </div>
 
         <p className="text-center text-lg leading-relaxed text-gray-800">
