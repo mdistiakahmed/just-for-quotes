@@ -34,13 +34,10 @@ export const categoryMap: any = {
     { name: "Funny", path: "funny" },
     { name: "Knock knock", path: "knock-knock" },
     { name: "Kids", path: "kids" },
-    { name: "Adult", path: "adult" },
   ],
   riddles: [
     { name: "Funny", path: "Funny" },
     { name: "Kids", path: "kids" },
-    { name: "Adult", path: "adult" },
-    // { name: "Kids", path: "Kids" },
   ],
 };
 
@@ -68,36 +65,173 @@ export const imageMap: ImageMap = {
 };
 
 export const quotePageMetaData: any = {
+  inspirational: {
+    title:
+      "Inspiring Quotes: Ignite Your Soul, Empower Your Mind - Daily Motivation",
+    desc: `Discover a world of wisdom with our collection of inspirational quotes. 
+    Find powerful words that ignite your soul, empower your mind, and fuel your journey to success. 
+    From famous leaders to everyday heroes, these quotes offer inspiration, motivation, and encouragement to overcome challenges and achieve your dreams. 
+    Let these uplifting messages be your daily dose of positivity and inspiration.`,
+    detailed: `Discover a world of wisdom with our collection of inspirational quotes. 
+    Find powerful words that ignite your soul, empower your mind, and fuel your journey to success. 
+    From famous leaders to everyday heroes, these quotes offer inspiration, motivation, and encouragement to overcome challenges and achieve your dreams. 
+    Let these uplifting messages be your daily dose of positivity and inspiration.`,
+  },
   love: {
-    title: "Heartfelt Love Quotes: Inspirational & Romantic Sayings",
-    desc: "Discover a world of love with our collection of heartfelt love quotes. Find inspiration, romance, and deep connections in these beautiful words.",
+    title: "Heartfelt Love Quotes: Express Your Feelings Deeply",
+    desc: `Discover the power of words with our collection of heartfelt love quotes. 
+    Whether you're looking to express your love, find inspiration for a romantic message, or simply appreciate the beauty of love, these quotes will touch your heart. 
+    From passionate declarations to tender expressions of affection, find the perfect words to convey your emotions. 
+    Let these love quotes ignite your passion and deepen your connection with your loved one.`,
+    detailed: `Discover the power of words with our collection of heartfelt love quotes. 
+    Whether you're looking to express your love, find inspiration for a romantic message, or simply appreciate the beauty of love, these quotes will touch your heart. 
+    From passionate declarations to tender expressions of affection, find the perfect words to convey your emotions. 
+    Let these love quotes ignite your passion and deepen your connection with your loved one.`,
   },
-  success: {
-    title: "Inspirational Quotes: Find Your Motivation and Succeed",
-    desc: "Discover powerful and inspiring quotes to fuel your journey to success. Find motivation, wisdom, and encouragement in our collection.",
+  funny: {
+    title: "Laugh Out Loud: Funny Quotes to Brighten Your Day",
+    desc: `Get ready to chuckle with our collection of side-splitting funny quotes. 
+    From witty one-liners to absurd observations, these quotes are guaranteed to make you laugh out loud. 
+    Whether you need a quick pick-me-up or want to share some humor with friends, our funny quote collection has something for everyone. 
+    Let the laughter begin!`,
+    detailed: `Get ready to chuckle with our collection of side-splitting funny quotes. 
+    From witty one-liners to absurd observations, these quotes are guaranteed to make you laugh out loud. 
+    Whether you need a quick pick-me-up or want to share some humor with friends, our funny quote collection has something for everyone. 
+    Let the laughter begin!`,
   },
-  religion: {
-    title: "Inspiring Religious Quotes: Find Faith and Hope",
-    desc: "Discover powerful and uplifting religious quotes to nourish your soul. Find inspiration, wisdom, and guidance in these timeless words.",
+  famous: {
+    title: "Timeless Wisdom: Famous Quotes from Great Minds",
+    desc: `Discover a treasure trove of profound thoughts and insightful words from history's most brilliant minds. 
+    Our collection of famous quotes features timeless wisdom from philosophers, leaders, artists, and more. 
+    Gain inspiration, motivation, and a deeper understanding of life through the words of those who have shaped our world. 
+    Explore a wide range of topics, from love and friendship to success and happiness.`,
+    detailed: `Discover a treasure trove of profound thoughts and insightful words from history's most brilliant minds. 
+    Our collection of famous quotes features timeless wisdom from philosophers, leaders, artists, and more. 
+    Gain inspiration, motivation, and a deeper understanding of life through the words of those who have shaped our world. 
+    Explore a wide range of topics, from love and friendship to success and happiness.`,
   },
-  loneliness: {
-    title: "Heart-Wrenching Loneliness Quotes: Find Comfort and Understanding",
-    desc: "Experience the depths of loneliness through these poignant quotes. Find solace, connection, and hope in shared feelings",
+  "good-morning": {
+    title: "Good Morning Quotes: Start Your Day with Inspiration",
+    desc: `Wake up to a world of positivity with our collection of uplifting good morning quotes. 
+    Find inspiring messages to kickstart your day, boost your mood, and set a positive tone for the hours ahead. 
+    Whether you're a morning person or not, these quotes will help you embrace the new day with enthusiasm and optimism. 
+    Share these quotes with friends and loved ones to spread joy and happiness.`,
+    detailed: `Wake up to a world of positivity with our collection of uplifting good morning quotes. 
+    Find inspiring messages to kickstart your day, boost your mood, and set a positive tone for the hours ahead. 
+    Whether you're a morning person or not, these quotes will help you embrace the new day with enthusiasm and optimism. 
+    Share these quotes with friends and loved ones to spread joy and happiness.`,
   },
-  family: {
-    title: "Heartwarming Family Quotes: Celebrate the Love That Bonds Us",
-    desc: "Discover beautiful and inspiring family quotes that celebrate the love and bonds that unite us. Find comfort, joy, and inspiration in these heartfelt messages.",
+  life: {
+    title: " Life Quotes: Finding Meaning and Inspiration",
+    desc: `Discover profound insights and wisdom about life with our curated collection of life quotes. 
+    From inspiring words of encouragement to thought-provoking reflections, these quotes offer a fresh perspective on life's journey. 
+    Explore the beauty of existence, the challenges of growth, and the power of human connection. 
+    Find motivation, comfort, and inspiration to live your best life.`,
+    detailed: `Discover profound insights and wisdom about life with our curated collection of life quotes. 
+    From inspiring words of encouragement to thought-provoking reflections, these quotes offer a fresh perspective on life's journey. 
+    Explore the beauty of existence, the challenges of growth, and the power of human connection. 
+    Find motivation, comfort, and inspiration to live your best life.`,
+  },
+  birthday: {
+    title: "Birthday Wishes and Quotes: Celebrate in Style",
+    desc: `Find the perfect birthday message with our collection of heartfelt and inspiring quotes. 
+    Whether you're looking for something funny, sentimental, or simply sweet, we've got you covered. 
+    Celebrate your loved ones with warm wishes and memorable quotes that capture the joy of this special day. 
+    Make birthdays even more special with our thoughtful and inspiring words.`,
+    detailed: `Find the perfect birthday message with our collection of heartfelt and inspiring quotes. 
+    Whether you're looking for something funny, sentimental, or simply sweet, we've got you covered. 
+    Celebrate your loved ones with warm wishes and memorable quotes that capture the joy of this special day. 
+    Make birthdays even more special with our thoughtful and inspiring words.`,
+  },
+  leadership: {
+    title: "Inspiring Leadership Quotes: Empower Your Team",
+    desc: `Discover powerful insights and wisdom from renowned leaders. 
+    Our collection of leadership quotes offers inspiration and guidance for those in positions of influence. 
+    Learn how to inspire, motivate, and empower your team while navigating challenges and achieving success. 
+    Whether you're a seasoned leader or just starting your journey, these quotes will help you develop the skills and mindset needed to make a positive impact.`,
+    detailed: `Discover powerful insights and wisdom from renowned leaders. 
+    Our collection of leadership quotes offers inspiration and guidance for those in positions of influence. 
+    Learn how to inspire, motivate, and empower your team while navigating challenges and achieving success. 
+    Whether you're a seasoned leader or just starting your journey, these quotes will help you develop the skills and mindset needed to make a positive impact.`,
+  },
+  kindness: {
+    title: "Spread Kindness: Kindness Quotes to Warm Your Heart",
+    desc: `Discover the power of kindness with our collection of heartwarming quotes. 
+    Find inspiration to spread compassion, empathy, and love in your daily life. 
+    From simple acts of kindness to profound reflections on humanity, these quotes will uplift your spirit and remind you of the importance of treating others with kindness. 
+    Let these words inspire you to make a positive impact on the world.`,
+    detailed: `Discover the power of kindness with our collection of heartwarming quotes. 
+    Find inspiration to spread compassion, empathy, and love in your daily life. 
+    From simple acts of kindness to profound reflections on humanity, these quotes will uplift your spirit and remind you of the importance of treating others with kindness. 
+    Let these words inspire you to make a positive impact on the world.`,
+  },
+  "self-love": {
+    title: "Embrace Yourself: Inspiring Self Love Quotes",
+    desc: `Discover the power of self-love with our collection of inspiring quotes. 
+    Learn to embrace your unique beauty, build self-confidence, and cultivate a positive body image. 
+    These quotes offer encouragement, motivation, and practical advice for nurturing a loving relationship with yourself. 
+    Let these words empower you to unlock your full potential and live a happier, more fulfilling life.`,
+    detailed: `Discover the power of self-love with our collection of inspiring quotes. 
+    Learn to embrace your unique beauty, build self-confidence, and cultivate a positive body image. 
+    These quotes offer encouragement, motivation, and practical advice for nurturing a loving relationship with yourself. 
+    Let these words empower you to unlock your full potential and live a happier, more fulfilling life.`,
+  },
+  "best-friend": {
+    title: "Best Friend Quotes: Celebrate Your Unbreakable Bond",
+    desc: `Cherish the incredible bond you share with your best friend with these heartwarming quotes. 
+    Discover words that perfectly capture the essence of friendship, loyalty, and shared adventures. 
+    From funny and lighthearted to deeply touching and inspirational, these quotes celebrate the magic of true friendship. 
+    Strengthen your bond and create lasting memories with your BFF.`,
+    detailed: `Cherish the incredible bond you share with your best friend with these heartwarming quotes. 
+    Discover words that perfectly capture the essence of friendship, loyalty, and shared adventures. 
+    From funny and lighthearted to deeply touching and inspirational, these quotes celebrate the magic of true friendship. 
+    Strengthen your bond and create lasting memories with your BFF.`,
   },
 };
 
 export const jokesPageMetaData: any = {
-  dirty: {
-    title: "Funny and Dirty Jokes ",
-    desc: "Explore a hilarious collection of funny and dirty jokes to spice up your day. Laugh out loud with our cheeky humor and share the fun with friends at JustForQuotes.",
+  "knock-knock": {
+    title: "Knock Knock Jokes: Fun and Funny!",
+    desc: `Get ready to laugh out loud with our classic knock knock jokes. 
+    These playful and silly jokes are perfect for sharing with friends and family. 
+    Test your wit and see if you can guess the punchline. 
+    Whether you're a seasoned joke-teller or a newbie, these knock knock jokes are sure to bring smiles and laughter to everyone. 
+    Let the fun begin!`,
+    description: `Get ready to laugh out loud with our classic knock knock jokes. 
+    These playful and silly jokes are perfect for sharing with friends and family. 
+    Test your wit and see if you can guess the punchline. 
+    Whether you're a seasoned joke-teller or a newbie, these knock knock jokes are sure to bring smiles and laughter to everyone. 
+    Let the fun begin!`,
   },
-  knockknock: {
-    title: "Knock-Knock Jokes to Make You Laugh ",
-    desc: "Discover a fun collection of knock-knock jokes that will make you laugh out loud. Enjoy classic and new knock-knock jokes perfect for sharing with friends and family at JustForQuotes.",
+  dad: {
+    title: "Dad Jokes: So Bad, They're Good!",
+    desc: `Get ready to groan and chuckle with our collection of classic dad jokes. 
+    These puns and one-liners are so bad, they're actually funny. 
+    Share these corny jokes with your family and friends to lighten the mood and create unforgettable moments. 
+    Warning: Excessive exposure to dad jokes may cause uncontrollable laughter and a temporary loss of eye rolls.`,
+    description: ``,
+  },
+  funny: {
+    title: "Funny Jokes: Laugh Your Socks Off!",
+    desc: `Get ready for a side-splitting good time with our collection of funny jokes! 
+    From witty one-liners to clever puns, we've got something to tickle your funny bone. 
+    Share these jokes with friends, family, or coworkers to spread laughter and joy. 
+    Warning: excessive laughter may occur!`,
+    description: `Get ready for a side-splitting good time with our collection of funny jokes! 
+    From witty one-liners to clever puns, we've got something to tickle your funny bone. 
+    Share these jokes with friends, family, or coworkers to spread laughter and joy. 
+    Warning: excessive laughter may occur!`,
+  },
+  kids: {
+    title: "Kids Friendly Jokes: Fun and Laughter for Everyone",
+    desc: `Get ready for giggles and grins with our collection of clean and funny jokes for kids. 
+    These silly and playful jokes are perfect for sharing with your little ones. 
+    From animal puns to silly riddles, these jokes will keep the whole family entertained. 
+    Enjoy a good laugh together and create unforgettable memories.`,
+    description: `Get ready for giggles and grins with our collection of clean and funny jokes for kids. 
+    These silly and playful jokes are perfect for sharing with your little ones. 
+    From animal puns to silly riddles, these jokes will keep the whole family entertained. 
+    Enjoy a good laugh together and create unforgettable memories.`,
   },
 };
 
@@ -172,7 +306,14 @@ export const memesPageMetaData: any = {
     detailed: `Get ready to give a big thumbs up to our hilarious collection of thumbs up memes! 
     From funny reactions to celebratory moments, we've got the perfect meme for every occasion. 
     Share the laughter with your friends and family.`,
-    facts: [],
+    facts: [
+      `The thumbs up gesture can be traced back to ancient Rome, where it could signify either life or death for gladiators.`,
+      `The thumbs up emoji, introduced in the early days of digital communication, rapidly became a staple of online interactions.`,
+      `The transition from emoji to meme was natural, with the simple gesture becoming a versatile canvas for humor, sarcasm, and irony.`,
+      `Misunderstandings: It's essential to be aware of cultural nuances to avoid unintentional offense.`,
+      `Thumbs up memes have the potential to spread rapidly across social media platforms, generating significant engagement.`,
+      `Community Building: Shared humor and relatable content foster a sense of community among meme enthusiasts.`,
+    ],
   },
   drake: {
     title: "Drake Memes: The Ultimate Collection of funny drake meme",
@@ -249,17 +390,23 @@ export const memesPageMetaData: any = {
 };
 
 export const riddlesPageMetaData: any = {
-  classic: {
-    title: "Classic Riddles: Sharpen Your Mind with Timeless Puzzles",
-    desc: `Challenge your intellect with our collection of classic riddles.
-     From easy to expert, these brain teasers will test your problem-solving skills and provide hours of fun. 
-     Discover the joy of unraveling timeless puzzles.`,
+  kids: {
+    title: "Fun Riddles for Kids: Sharpen Those Brains!",
+    desc: `Spark your child's curiosity with our collection of fun and engaging riddles. 
+    These brain-teasers are perfect for kids of all ages. With a mix of easy and challenging riddles, your child will love trying to solve the puzzles. 
+    Perfect for car rides, waiting rooms, or family game night. Let the riddle-solving adventure begin!`,
+    detailed: `Spark your child's curiosity with our collection of fun and engaging riddles. 
+    These brain-teasers are perfect for kids of all ages. With a mix of easy and challenging riddles, your child will love trying to solve the puzzles. 
+    Perfect for car rides, waiting rooms, or family game night. Let the riddle-solving adventure begin!`,
   },
   funny: {
-    title: "Funny Riddles: Get Ready to Laugh Out Loud!",
-    desc: `Can't stop laughing? Our collection of funny riddles is here to tickle your funny bone!
-     Challenge your friends and family with these hilarious brain teasers and see who can crack the jokes first. 
-     Get ready for a side-splitting good time!`,
+    title: "Brain Teasers: Funny Riddles to Challenge Your Mind",
+    desc: `Get ready to scratch your head and laugh out loud with our collection of funny riddles. 
+    These clever puzzles will test your problem-solving skills while providing endless entertainment. 
+    Share these riddles with friends and family for a fun and engaging challenge. Can you crack the code?`,
+    detailed: `Get ready to scratch your head and laugh out loud with our collection of funny riddles. 
+    These clever puzzles will test your problem-solving skills while providing endless entertainment. 
+    Share these riddles with friends and family for a fun and engaging challenge. Can you crack the code?`,
   },
 };
 

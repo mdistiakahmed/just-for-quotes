@@ -1,7 +1,36 @@
 import JokeCard from "@/components/card/JokeCard";
 import { jokesPageMetaData } from "@/utils/constants";
 import { getJokes } from "@/utils/getData";
+import { Metadata } from "next";
 import Image from "next/image";
+
+export async function generateMetadata({
+  params,
+}: any): Promise<Metadata | undefined> {
+  const { subcategory } = params;
+  const { title, desc } = jokesPageMetaData[subcategory.toLowerCase()];
+
+  return {
+    title: `${title} | JustForQuotes`,
+    description: `${desc}`,
+    openGraph: {
+      title: `${title} | JustForQuotes`,
+      description: `${desc}`,
+      type: "article",
+      locale: "en_US",
+      url: `https://www.justforquotes.com/jokes/${subcategory}`,
+      siteName: "JustForQuotes",
+      images: [
+        {
+          url: `/jokes_${subcategory.toLowerCase()}.svg`,
+          width: 1200,
+          height: 630,
+          alt: `${subcategory} jokes`,
+        },
+      ],
+    },
+  };
+}
 
 const SubCategoryPage = async ({ params }: any) => {
   const { subcategory } = params;
@@ -16,7 +45,7 @@ const SubCategoryPage = async ({ params }: any) => {
       </p>
       <div className="flex justify-center">
         <Image
-          src={`/joke_${subcategory.toLowerCase()}.svg`}
+          src={`/jokes_${subcategory.toLowerCase()}.svg`}
           alt={`${subcategory} quote`}
           height={40}
           width={40}

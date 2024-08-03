@@ -18,6 +18,24 @@ export const getQuote = async (param: string) => {
       case "good-morning":
         ({ quoteList } = await import("../data/quotes/family"));
         break;
+      case "life":
+        ({ quoteList } = await import("../data/quotes/family"));
+        break;
+      case "birthday":
+        ({ quoteList } = await import("../data/quotes/family"));
+        break;
+      case "self-love":
+        ({ quoteList } = await import("../data/quotes/family"));
+        break;
+      case "best-friend":
+        ({ quoteList } = await import("../data/quotes/family"));
+        break;
+      case "kindness":
+        ({ quoteList } = await import("../data/quotes/family"));
+        break;
+      case "leadership":
+        ({ quoteList } = await import("../data/quotes/family"));
+        break;
       default:
         throw new Error(`No data file found for param: ${param}`);
     }
@@ -38,6 +56,15 @@ export const getJokes = async (param: string) => {
         ({ jokeList } = await import("../data/jokes/dirty"));
         break;
       case "knock-knock":
+        ({ jokeList } = await import("../data/jokes/knockknock"));
+        break;
+      case "dad":
+        ({ jokeList } = await import("../data/jokes/knockknock"));
+        break;
+      case "kids":
+        ({ jokeList } = await import("../data/jokes/knockknock"));
+        break;
+      case "adult":
         ({ jokeList } = await import("../data/jokes/knockknock"));
         break;
       default:

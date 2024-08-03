@@ -21,7 +21,7 @@ export async function generateMetadata({
       siteName: "JustForQuotes",
       images: [
         {
-          url: `/meme_${subcategory.toLowerCase()}.svg`,
+          url: `/memes_${subcategory.toLowerCase()}.svg`,
           width: 1200,
           height: 630,
           alt: "Robots and man anime meme",

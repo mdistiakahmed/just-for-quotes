@@ -1,7 +1,36 @@
 import QuoteCard from "@/components/card/QuoteCard";
 import { quotePageMetaData } from "@/utils/constants";
 import { getQuote } from "@/utils/getData";
+import { Metadata } from "next";
 import Image from "next/image";
+
+export async function generateMetadata({
+  params,
+}: any): Promise<Metadata | undefined> {
+  const { subcategory } = params;
+  const { title, desc } = quotePageMetaData[subcategory.toLowerCase()];
+
+  return {
+    title: `${title} | JustForQuotes`,
+    description: `${desc}`,
+    openGraph: {
+      title: `${title} | JustForQuotes`,
+      description: `${desc}`,
+      type: "article",
+      locale: "en_US",
+      url: `https://www.justforquotes.com/quotes/${subcategory}`,
+      siteName: "JustForQuotes",
+      images: [
+        {
+          url: `/quotes_${subcategory.toLowerCase()}.svg`,
+          width: 1200,
+          height: 630,
+          alt: `${subcategory} quotes`,
+        },
+      ],
+    },
+  };
+}
 
 const SubCategoryPage = async ({ params }: any) => {
   const { subcategory } = params;
@@ -15,7 +44,7 @@ const SubCategoryPage = async ({ params }: any) => {
       </p>
       <div className="flex justify-center">
         <Image
-          src={`/quote_${subcategory.toLowerCase()}.svg`}
+          src={`/quotes_${subcategory.toLowerCase()}.svg`}
           alt={`${subcategory} quote`}
           height={40}
           width={40}

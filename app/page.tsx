@@ -60,11 +60,11 @@ export default async function Home() {
 
         <div className="flex items-center justify-center">
           <Image
-            src={"/cat2.svg"}
-            alt="happy cat"
+            src={"/quotes_inspirational.svg"}
+            alt="nature"
             height={40}
             width={40}
-            className="h-[300px] w-[300px]"
+            className="h-[300px] w-[400px]"
           />
         </div>
 
@@ -195,7 +195,7 @@ export default async function Home() {
 
         <div className="flex items-center justify-center">
           <Image
-            src={"/cat.svg"}
+            src={"/quotes_funny.svg"}
             alt="happy cat"
             height={40}
             width={40}
