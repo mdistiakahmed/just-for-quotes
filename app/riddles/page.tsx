@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const RiddleHomePage = async () => {
-  const classicRiddleList = await getRiddles("adult");
+  const kidsRiddleList = await getRiddles("kids");
   const funnyRiddleList = await getRiddles("funny");
 
   const categoryRiddleSection = (catRiddleList: any, cat: any) => {
@@ -13,13 +13,13 @@ const RiddleHomePage = async () => {
       <div className="grid grid-cols-1 gap-5 mt-8">
         <div className="flex flex-col items-center">
           <Image
-            src={`/riddle_${cat.toLowerCase()}.svg`}
-            alt={`${cat} Jokes`}
+            src={`/riddles_${cat.toLowerCase()}.svg`}
+            alt={`${cat} Riddles`}
             height={40}
             width={40}
             className="h-[200px] w-[200px]"
           />
-          <h2 className="text-xl">{cat} Jokes</h2>
+          <h2 className="text-xl">{cat} Riddles</h2>
         </div>
         {catRiddleList.map((r: any, index: any) => (
           <RiddleCard riddle={r.riddle} answer={r.answer} key={index} />
@@ -48,8 +48,8 @@ const RiddleHomePage = async () => {
         the fun with friends. Solve riddles, laugh out loud, and become a riddle
         master today!
       </p>
-      {categoryRiddleSection(classicRiddleList.slice(0, 5), "Classic")}
       {categoryRiddleSection(funnyRiddleList.slice(0, 5), "Funny")}
+      {categoryRiddleSection(kidsRiddleList.slice(0, 5), "Kids")}
     </div>
   );
 };

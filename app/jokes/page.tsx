@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const JokesPage = async () => {
-  const dirtyJokesList = await getJokes("funny");
+  const funnyJokesList = await getJokes("funny");
   const knockknockJokesList = await getJokes("knock-knock");
 
   const categoryJokesSection = (catJokeList: any, cat: any) => {
@@ -12,7 +12,7 @@ const JokesPage = async () => {
       <div className="grid grid-cols-1 gap-5 mt-8">
         <div className="flex flex-col items-center">
           <Image
-            src={`/joke_${cat.toLowerCase()}.svg`}
+            src={`/jokes_${cat.toLowerCase()}.svg`}
             alt={`${cat} Jokes`}
             height={40}
             width={40}
@@ -46,8 +46,8 @@ const JokesPage = async () => {
         share with friends and family. Enjoy clean, funny jokes for all ages and
         brighten your day with laughter.
       </p>
-      {categoryJokesSection(dirtyJokesList.slice(0, 3), "Dirty")}
-      {categoryJokesSection(knockknockJokesList.slice(0, 3), "Knockknock")}
+      {categoryJokesSection(funnyJokesList.slice(0, 5), "Funny")}
+      {categoryJokesSection(knockknockJokesList.slice(0, 5), "Knock-knock")}
     </div>
   );
 };

@@ -5,18 +5,18 @@ import Link from "next/link";
 import React from "react";
 
 const QuotePage = async () => {
-  const loveQuoteList = await getQuote("inspirational");
-  const lonelinessQuoteList = await getQuote("love");
-  const successQuoteList = await getQuote("funny");
-  const religionQuoteList = await getQuote("famous");
-  const familyQuoteList = await getQuote("good-morning");
+  const inspirationalQuoteList = await getQuote("inspirational");
+  const loveQuoteList = await getQuote("love");
+  const funnyQuoteList = await getQuote("funny");
+  const famousQuoteList = await getQuote("famous");
+  const goodMorningQuoteList = await getQuote("good-morning");
 
   const categoryQuoteSection = (catQuoteList: any, cat: any) => {
     return (
       <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 mt-8">
         <div className="flex flex-col items-center">
           <Image
-            src={`/quote_${cat.toLowerCase()}.svg`}
+            src={`/quotes_${cat.toLowerCase()}.svg`}
             alt={`${cat} quote`}
             height={40}
             width={40}
@@ -56,11 +56,11 @@ const QuotePage = async () => {
         life&apos;s challenges. Find the perfect words to brighten your day and
         fuel your journey towards success.
       </p>
-      {categoryQuoteSection(successQuoteList, "Success")}
+      {categoryQuoteSection(inspirationalQuoteList, "Inspirational")}
       {categoryQuoteSection(loveQuoteList, "Love")}
-      {categoryQuoteSection(lonelinessQuoteList, "Loneliness")}
-      {categoryQuoteSection(religionQuoteList, "Religion")}
-      {categoryQuoteSection(familyQuoteList, "Family")}
+      {categoryQuoteSection(funnyQuoteList, "Funny")}
+      {categoryQuoteSection(famousQuoteList, "Famous")}
+      {categoryQuoteSection(goodMorningQuoteList, "Good-Morning")}
     </div>
   );
 };

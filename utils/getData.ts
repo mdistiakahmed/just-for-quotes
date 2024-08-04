@@ -53,19 +53,16 @@ export const getJokes = async (param: string) => {
 
     switch (param) {
       case "funny":
-        ({ jokeList } = await import("../data/jokes/dirty"));
+        ({ jokeList } = await import("../data/jokes/funny"));
         break;
       case "knock-knock":
         ({ jokeList } = await import("../data/jokes/knockknock"));
         break;
       case "dad":
-        ({ jokeList } = await import("../data/jokes/knockknock"));
+        ({ jokeList } = await import("../data/jokes/dad"));
         break;
       case "kids":
-        ({ jokeList } = await import("../data/jokes/knockknock"));
-        break;
-      case "adult":
-        ({ jokeList } = await import("../data/jokes/knockknock"));
+        ({ jokeList } = await import("../data/jokes/kids"));
         break;
       default:
         throw new Error(`No data file found for param: ${param}`);
@@ -86,11 +83,8 @@ export const getRiddles = async (param: string) => {
       case "funny":
         ({ riddleList } = await import("../data/riddles/funny"));
         break;
-      case "adult":
-        ({ riddleList } = await import("../data/riddles/classic"));
-        break;
       case "kids":
-        ({ riddleList } = await import("../data/riddles/classic"));
+        ({ riddleList } = await import("../data/riddles/kids"));
         break;
       default:
         throw new Error(`No data file found for param: ${param}`);
