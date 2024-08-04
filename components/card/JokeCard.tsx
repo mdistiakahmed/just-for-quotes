@@ -9,7 +9,7 @@ const JokeCard = ({ joke }: any) => {
       {/* SVG Image */}
       <div className="absolute top-0 right-[-15px] w-20 h-20">
         <img
-          src="/gopal.png"
+          src="/jokes_funny.svg"
           alt="icon"
           className="w-full h-full object-contain transition-transform duration-300 hover:rotate-12"
         />

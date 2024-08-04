@@ -412,13 +412,21 @@ export const riddlesPageMetaData: any = {
 
 export const quoteList = [
   {
-    quote:
-      "We cannot solve problems with the kind of thinking we employed when we came up with them.",
-    author: "Albert Einstein",
+    quote: "The only thing we have to fear is fear itself.",
+    author: "Franklin D. Roosevelt",
   },
   {
-    quote: "Be yourself; everyone else is already taken.",
-    author: "Oscar Wilde",
+    quote: "To be or not to be, that is the question.",
+    author: "William Shakespeare",
+  },
+  {
+    quote:
+      "I have a dream that one day this nation will rise up and live out the true meaning of its creed: 'We hold these truths to be self-evident, that all men are created equal.'",
+    author: "Martin Luther King Jr.",
+  },
+  {
+    quote: "In the middle of difficulty lies opportunity.",
+    author: "Albert Einstein",
   },
   {
     quote:
@@ -426,8 +434,26 @@ export const quoteList = [
     author: "Albert Einstein",
   },
   {
-    quote: "A room without books is like a body without a soul.",
-    author: "Marcus Tullius Cicero",
+    quote:
+      "The only person you are destined to become is the person you decide to be.",
+    author: "Ralph Waldo Emerson",
+  },
+  {
+    quote:
+      "The greatest glory in living lies not in never falling, but in rising every time we fall.",
+    author: "Nelson Mandela",
+  },
+  {
+    quote: "The only way to do great work is to love what you do.",
+    author: "Steve Jobs",
+  },
+  {
+    quote: "You must be the change you wish to see in the world.",
+    author: "Mahatma Gandhi",
+  },
+  {
+    quote: "The mind is everything. What you think you become.",
+    author: "Buddha",
   },
 ];
 
@@ -444,24 +470,75 @@ export const jokeList = [
   {
     joke: `Knock, Knock;Who's there?;Tank.;Tank who?;You're welcome.`,
   },
+  {
+    joke: "I tried to sue the airline for losing my luggage. I lost my case.",
+  },
+  {
+    joke: "I told my wife she was drawing her eyebrows too high. She seemed surprised.",
+  },
+  {
+    joke: "I tried starting a hot air balloon business, but it never took off.",
+  },
+  {
+    joke: "What do you call a lazy kangaroo? A pouch potato.",
+  },
+  {
+    joke: "I tried to catch some fog, but I mist.",
+  },
+  {
+    joke: "What do you call a fish with no eyes? Fsh.",
+  },
+  {
+    joke: "I told my wife she was drawing her eyebrows too high. She seemed surprised.",
+  },
+  {
+    joke: "Why did the scarecrow win an award? Because he was outstanding in his field.",
+  },
+  {
+    joke: "I tried to catch some fog, but I mist.",
+  },
+  {
+    joke: "What do you call a lazy kangaroo? A pouch potato.",
+  },
+  {
+    joke: "I tried to sue the airline for losing my luggage. I lost my case.",
+  },
+  {
+    joke: "Did you hear about the restaurant on the moon? Great food, no atmosphere.",
+  },
 ];
 
 export const riddleList = [
   {
-    riddle:
-      "I speak without a mouth and hear without ears. I have no body, but I come alive with wind. What am I?",
-    answer: "An echo.",
+    riddle: "What has a head, a tail, is brown, and has no legs?",
+    answer: "A penny.",
   },
   {
-    riddle: "I'm tall when I'm young, and I'm short when I'm old. What am I?",
-    answer: "A candle.",
+    riddle: "What has many teeth but can't bite?",
+    answer: "A comb.",
   },
   {
-    riddle: "The more of this there is, the less you see. What is it?",
-    answer: "Darkness.",
+    riddle: "Why did the bicycle fall over?",
+    answer: "Because it was two-tired.",
   },
   {
-    riddle: "What has keys but can't open locks?",
-    answer: "A piano.",
+    riddle: "Why are ghosts bad at lying?",
+    answer: "Because they are too transparent.",
+  },
+  {
+    riddle: "What has four wheels and flies?",
+    answer: "A garbage truck.",
+  },
+  {
+    riddle: "What kind of room has no doors or windows?",
+    answer: "A mushroom.",
+  },
+  {
+    riddle: "Why did the math book look sad?",
+    answer: "Because it had too many problems.",
+  },
+  {
+    riddle: "What building has the most stories?",
+    answer: "The library.",
   },
 ];
