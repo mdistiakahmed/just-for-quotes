@@ -12,13 +12,15 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Inspiring Quotes, Jokes, Memes, and Riddles | JustForQuotes",
+  title:
+    "Ultimate Hub for Motivation, Jokes, Memes, Puzzles & Riddles - Your Daily Dose of Fun & Inspiration | JustForQuotes",
   description:
-    "Explore a diverse collection of motivational quotes, jokes, memes, and riddles to uplift your mood and bring joy to your day.",
+    "Discover the ultimate hub for daily motivation, laughter, and brain-teasing fun! Explore our collection of motivational quotes, hilarious jokes, trending memes, challenging puzzles, and mind-bending riddles. Your go-to source for inspiration and entertainment.",
   openGraph: {
-    title: "Inspiring Quotes, Jokes, Memes, and Riddles | JustForQuotes",
+    title:
+      "Ultimate Hub for Motivation, Jokes, Memes, Puzzles & Riddles - Your Daily Dose of Fun & Inspiration | JustForQuotes",
     description:
-      "Discover an extensive range of motivational quotes, jokes, memes, and riddles. Find inspiration, laughter, and fun all in one place.",
+      "Discover the ultimate hub for daily motivation, laughter, and brain-teasing fun! Explore our collection of motivational quotes, hilarious jokes, trending memes, challenging puzzles, and mind-bending riddles. Your go-to source for inspiration and entertainment.",
     type: "website",
     locale: "en_US",
     url: `https://justforquotes.com/`,
