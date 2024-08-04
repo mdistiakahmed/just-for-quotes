@@ -4,37 +4,37 @@ export const getQuote = async (param: string) => {
 
     switch (param) {
       case "inspirational":
-        ({ quoteList } = await import("../data/quotes/love"));
+        ({ quoteList } = await import("../data/quotes/inspirational"));
         break;
       case "love":
-        ({ quoteList } = await import("../data/quotes/loneliness"));
+        ({ quoteList } = await import("../data/quotes/love"));
         break;
       case "funny":
-        ({ quoteList } = await import("../data/quotes/success"));
+        ({ quoteList } = await import("../data/quotes/funny"));
         break;
       case "famous":
-        ({ quoteList } = await import("../data/quotes/religion"));
+        ({ quoteList } = await import("../data/quotes/famous"));
         break;
       case "good-morning":
-        ({ quoteList } = await import("../data/quotes/family"));
+        ({ quoteList } = await import("../data/quotes/good_morning"));
         break;
       case "life":
-        ({ quoteList } = await import("../data/quotes/family"));
+        ({ quoteList } = await import("../data/quotes/life"));
         break;
       case "birthday":
-        ({ quoteList } = await import("../data/quotes/family"));
+        ({ quoteList } = await import("../data/quotes/birthday"));
         break;
       case "self-love":
-        ({ quoteList } = await import("../data/quotes/family"));
+        ({ quoteList } = await import("../data/quotes/self_love"));
         break;
       case "best-friend":
-        ({ quoteList } = await import("../data/quotes/family"));
+        ({ quoteList } = await import("../data/quotes/best_friend"));
         break;
       case "kindness":
-        ({ quoteList } = await import("../data/quotes/family"));
+        ({ quoteList } = await import("../data/quotes/kindness"));
         break;
       case "leadership":
-        ({ quoteList } = await import("../data/quotes/family"));
+        ({ quoteList } = await import("../data/quotes/leadership"));
         break;
       default:
         throw new Error(`No data file found for param: ${param}`);
