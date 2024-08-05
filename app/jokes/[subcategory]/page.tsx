@@ -1,5 +1,6 @@
 import JokeCard from "@/components/card/JokeCard";
-import { jokesPageMetaData } from "@/utils/constants";
+import PaginationComponent from "@/components/pagination/PaginationComponent";
+import { ITEMS_PER_PAGE, jokesPageMetaData } from "@/utils/constants";
 import { getJokes } from "@/utils/getData";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -37,6 +38,9 @@ const SubCategoryPage = async ({ params }: any) => {
   const jokeList = await getJokes(subcategory);
   const { title, desc } = jokesPageMetaData[subcategory];
 
+  const totalItem = jokeList?.length;
+  const firstPageData = jokeList?.slice(0, ITEMS_PER_PAGE);
+
   return (
     <div className="flex flex-col gap-5">
       <h1 className="text-2xl font-bold text-center">{title}</h1>
@@ -53,9 +57,13 @@ const SubCategoryPage = async ({ params }: any) => {
         />
       </div>
       <div className="grid grid-cols-1 gap-16">
-        {jokeList.map((j, index) => (
+        {firstPageData.map((j, index) => (
           <JokeCard joke={j.joke} key={index} />
         ))}
+      </div>
+
+      <div className="flex items-center justify-center p-10">
+        <PaginationComponent totalItem={totalItem} />
       </div>
     </div>
   );

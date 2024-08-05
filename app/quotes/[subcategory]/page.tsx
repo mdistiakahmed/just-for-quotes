@@ -1,5 +1,6 @@
 import QuoteCard from "@/components/card/QuoteCard";
-import { quotePageMetaData } from "@/utils/constants";
+import PaginationComponent from "@/components/pagination/PaginationComponent";
+import { ITEMS_PER_PAGE, quotePageMetaData } from "@/utils/constants";
 import { getQuote } from "@/utils/getData";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -34,8 +35,12 @@ export async function generateMetadata({
 
 const SubCategoryPage = async ({ params }: any) => {
   const { subcategory } = params;
-  const quoteList = await getQuote(subcategory);
   const { title, desc } = quotePageMetaData[subcategory];
+
+  const quoteList = await getQuote(subcategory);
+  const totalItem = quoteList?.length;
+  const firstPageData = quoteList?.slice(0, ITEMS_PER_PAGE);
+
   return (
     <div className="flex flex-col gap-5">
       <h1 className="text-2xl font-bold text-center">{title}</h1>
@@ -52,7 +57,7 @@ const SubCategoryPage = async ({ params }: any) => {
         />
       </div>
       <div className="grid grid-cols-1 gap-16 sm:grid-cols-2">
-        {quoteList.map((q, index) => (
+        {firstPageData.map((q, index) => (
           <QuoteCard
             quote={q.quote}
             author={q.author}
@@ -60,6 +65,9 @@ const SubCategoryPage = async ({ params }: any) => {
             key={index}
           />
         ))}
+      </div>
+      <div className="flex items-center justify-center p-10">
+        <PaginationComponent totalItem={totalItem} />
       </div>
     </div>
   );

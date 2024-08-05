@@ -1,3 +1,5 @@
+export const ITEMS_PER_PAGE = 10;
+
 export const navOptions = [
   { name: "Quotes", path: "/quotes" },
   { name: "Jokes", path: "/jokes" },

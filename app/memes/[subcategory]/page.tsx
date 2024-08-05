@@ -1,4 +1,5 @@
-import { memesPageMetaData } from "@/utils/constants";
+import PaginationComponent from "@/components/pagination/PaginationComponent";
+import { ITEMS_PER_PAGE, memesPageMetaData } from "@/utils/constants";
 import { getMemes } from "@/utils/getData";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -37,6 +38,9 @@ const SubCategoryPage = async ({ params }: any) => {
   const { title, detailed, facts } =
     memesPageMetaData[subcategory.toLowerCase()];
 
+  const totalItem = memeList?.length;
+  const firstPageData = memeList?.slice(0, ITEMS_PER_PAGE);
+
   return (
     <div className="flex flex-col gap-5">
       <h1 className="text-2xl font-bold text-center">{title}</h1>
@@ -53,7 +57,7 @@ const SubCategoryPage = async ({ params }: any) => {
         />
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-16">
-        {memeList.map((m: any, index: any) => (
+        {firstPageData.map((m: any, index: any) => (
           <div key={index} className="relative   h-[400px] ">
             <Image
               src={m.url}
@@ -64,6 +68,10 @@ const SubCategoryPage = async ({ params }: any) => {
             />
           </div>
         ))}
+      </div>
+
+      <div className="flex items-center justify-center p-10">
+        <PaginationComponent totalItem={totalItem} />
       </div>
 
       <div className="mt-10 px-5 py-10 bg-gray-100 rounded-lg shadow-md">
