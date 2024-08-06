@@ -41,7 +41,7 @@ const SecondaryHeader = ({ subNavList }: any) => {
   };
 
   return (
-    <header className={`${dancingScript.className} sticky top-0 z-10 bg-white`}>
+    <header className={`${dancingScript.className} sticky top-0 z-50 bg-white`}>
       <nav className="p-2 sticky top-0">
         {subNavList && (
           <ul className=" flex gap-4 overflow-auto no-scrollbar">

@@ -1,6 +1,7 @@
 import JokeCard from "@/components/card/JokeCard";
 import PaginationComponent from "@/components/pagination/PaginationComponent";
-import { ITEMS_PER_PAGE, jokesPageMetaData } from "@/utils/constants";
+import { jokesPageMetaData } from "@/data/jokes/metadata";
+import { ITEMS_PER_PAGE } from "@/utils/constants";
 import { getJokes } from "@/utils/getData";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -36,7 +37,7 @@ export async function generateMetadata({
 const SubCategoryPage = async ({ params }: any) => {
   const { subcategory } = params;
   const jokeList = await getJokes(subcategory);
-  const { title, desc } = jokesPageMetaData[subcategory];
+  const { title, description, notes } = jokesPageMetaData[subcategory];
 
   const totalItem = jokeList?.length;
   const firstPageData = jokeList?.slice(0, ITEMS_PER_PAGE);
@@ -45,7 +46,7 @@ const SubCategoryPage = async ({ params }: any) => {
     <div className="flex flex-col gap-5">
       <h1 className="text-2xl font-bold text-center">{title}</h1>
       <p className="text-center text-lg leading-relaxed text-gray-800 mt-4">
-        {desc}
+        {description}
       </p>
       <div className="flex justify-center">
         <Image
@@ -64,6 +65,17 @@ const SubCategoryPage = async ({ params }: any) => {
 
       <div className="flex items-center justify-center p-10">
         <PaginationComponent totalItem={totalItem} />
+      </div>
+
+      <div className="flex flex-col gap-5">
+        {notes &&
+          notes.map((n: any, index: any) => {
+            return (
+              <p key={index} className="text-xl text-center">
+                {n}
+              </p>
+            );
+          })}
       </div>
     </div>
   );

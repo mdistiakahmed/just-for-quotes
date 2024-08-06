@@ -66,52 +66,6 @@ export const imageMap: ImageMap = {
   14: "text-black",
 };
 
-export const jokesPageMetaData: any = {
-  "knock-knock": {
-    title: "Knock Knock Jokes: Fun and Funny!",
-    desc: `Get ready to laugh out loud with our classic knock knock jokes. 
-    These playful and silly jokes are perfect for sharing with friends and family. 
-    Test your wit and see if you can guess the punchline. 
-    Whether you're a seasoned joke-teller or a newbie, these knock knock jokes are sure to bring smiles and laughter to everyone. 
-    Let the fun begin!`,
-    description: `Get ready to laugh out loud with our classic knock knock jokes. 
-    These playful and silly jokes are perfect for sharing with friends and family. 
-    Test your wit and see if you can guess the punchline. 
-    Whether you're a seasoned joke-teller or a newbie, these knock knock jokes are sure to bring smiles and laughter to everyone. 
-    Let the fun begin!`,
-  },
-  dad: {
-    title: "Dad Jokes: So Bad, They're Good!",
-    desc: `Get ready to groan and chuckle with our collection of classic dad jokes. 
-    These puns and one-liners are so bad, they're actually funny. 
-    Share these corny jokes with your family and friends to lighten the mood and create unforgettable moments. 
-    Warning: Excessive exposure to dad jokes may cause uncontrollable laughter and a temporary loss of eye rolls.`,
-    description: ``,
-  },
-  funny: {
-    title: "Funny Jokes: Laugh Your Socks Off!",
-    desc: `Get ready for a side-splitting good time with our collection of funny jokes! 
-    From witty one-liners to clever puns, we've got something to tickle your funny bone. 
-    Share these jokes with friends, family, or coworkers to spread laughter and joy. 
-    Warning: excessive laughter may occur!`,
-    description: `Get ready for a side-splitting good time with our collection of funny jokes! 
-    From witty one-liners to clever puns, we've got something to tickle your funny bone. 
-    Share these jokes with friends, family, or coworkers to spread laughter and joy. 
-    Warning: excessive laughter may occur!`,
-  },
-  kids: {
-    title: "Kids Friendly Jokes: Fun and Laughter for Everyone",
-    desc: `Get ready for giggles and grins with our collection of clean and funny jokes for kids. 
-    These silly and playful jokes are perfect for sharing with your little ones. 
-    From animal puns to silly riddles, these jokes will keep the whole family entertained. 
-    Enjoy a good laugh together and create unforgettable memories.`,
-    description: `Get ready for giggles and grins with our collection of clean and funny jokes for kids. 
-    These silly and playful jokes are perfect for sharing with your little ones. 
-    From animal puns to silly riddles, these jokes will keep the whole family entertained. 
-    Enjoy a good laugh together and create unforgettable memories.`,
-  },
-};
-
 export const memesPageMetaData: any = {
   funny: {
     title: "Funny Memes Collection - Laugh Out Loud Memes",
@@ -263,27 +217,6 @@ export const memesPageMetaData: any = {
       `The side-eye is a non-verbal cue that conveys suspicion or disapproval, making it an effective way to visually communicate negative emotions or judgments.`,
       `Variations of the side-eye meme can include captions that enhance the expression of skepticism or disapproval, often adding humor or wit to the reaction.`,
     ],
-  },
-};
-
-export const riddlesPageMetaData: any = {
-  kids: {
-    title: "Fun Riddles for Kids: Sharpen Those Brains!",
-    desc: `Spark your child's curiosity with our collection of fun and engaging riddles. 
-    These brain-teasers are perfect for kids of all ages. With a mix of easy and challenging riddles, your child will love trying to solve the puzzles. 
-    Perfect for car rides, waiting rooms, or family game night. Let the riddle-solving adventure begin!`,
-    detailed: `Spark your child's curiosity with our collection of fun and engaging riddles. 
-    These brain-teasers are perfect for kids of all ages. With a mix of easy and challenging riddles, your child will love trying to solve the puzzles. 
-    Perfect for car rides, waiting rooms, or family game night. Let the riddle-solving adventure begin!`,
-  },
-  funny: {
-    title: "Brain Teasers: Funny Riddles to Challenge Your Mind",
-    desc: `Get ready to scratch your head and laugh out loud with our collection of funny riddles. 
-    These clever puzzles will test your problem-solving skills while providing endless entertainment. 
-    Share these riddles with friends and family for a fun and engaging challenge. Can you crack the code?`,
-    detailed: `Get ready to scratch your head and laugh out loud with our collection of funny riddles. 
-    These clever puzzles will test your problem-solving skills while providing endless entertainment. 
-    Share these riddles with friends and family for a fun and engaging challenge. Can you crack the code?`,
   },
 };
 
