@@ -1,6 +1,7 @@
 import QuoteCard from "@/components/card/QuoteCard";
 import PaginationComponent from "@/components/pagination/PaginationComponent";
-import { ITEMS_PER_PAGE, quotePageMetaData } from "@/utils/constants";
+import { quotePageMetaData } from "@/data/quotes/metadata";
+import { ITEMS_PER_PAGE } from "@/utils/constants";
 import { getQuote } from "@/utils/getData";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -35,7 +36,7 @@ export async function generateMetadata({
 
 const SubCategoryPage = async ({ params }: any) => {
   const { subcategory } = params;
-  const { title, desc } = quotePageMetaData[subcategory];
+  const { title, detailed, notes } = quotePageMetaData[subcategory];
 
   const quoteList = await getQuote(subcategory);
   const totalItem = quoteList?.length;
@@ -45,7 +46,7 @@ const SubCategoryPage = async ({ params }: any) => {
     <div className="flex flex-col gap-5">
       <h1 className="text-2xl font-bold text-center">{title}</h1>
       <p className="text-center text-lg leading-relaxed text-gray-800 mt-4">
-        {desc}
+        {detailed}
       </p>
       <div className="flex justify-center">
         <Image
@@ -68,6 +69,17 @@ const SubCategoryPage = async ({ params }: any) => {
       </div>
       <div className="flex items-center justify-center p-10">
         <PaginationComponent totalItem={totalItem} />
+      </div>
+
+      <div className="flex flex-col gap-5">
+        {notes &&
+          notes.map((n: any, index: any) => {
+            return (
+              <p key={index} className="text-xl text-center">
+                {n}
+              </p>
+            );
+          })}
       </div>
     </div>
   );
