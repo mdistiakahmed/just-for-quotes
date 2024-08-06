@@ -1,5 +1,6 @@
 import JokeCard from "@/components/card/JokeCard";
 import PaginationComponent from "@/components/pagination/PaginationComponent";
+import ShareWidget from "@/components/share/ShareWidget";
 import { jokesPageMetaData } from "@/data/jokes/metadata";
 import { ITEMS_PER_PAGE } from "@/utils/constants";
 import { getJokes } from "@/utils/getData";
@@ -48,6 +49,7 @@ const SubCategoryPage = async ({ params }: any) => {
       <p className="text-center text-lg leading-relaxed text-gray-800 mt-4">
         {description}
       </p>
+      <ShareWidget />
       <div className="flex justify-center">
         <Image
           src={`/jokes_${subcategory.toLowerCase()}.svg`}

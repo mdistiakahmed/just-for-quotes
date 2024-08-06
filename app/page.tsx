@@ -1,6 +1,7 @@
 import JokeCard from "@/components/card/JokeCard";
 import QuoteCard from "@/components/card/QuoteCard";
 import RiddleCard from "@/components/card/RiddleCard";
+import ShareWidget from "@/components/share/ShareWidget";
 import { jokeList, quoteList, riddleList } from "@/utils/constants";
 import Image from "next/image";
 import Link from "next/link";
@@ -22,6 +23,7 @@ export default async function Home() {
           hilarious jokes, trending memes, challenging puzzles, and mind-bending
           riddles. Your go-to source for inspiration and entertainment.
         </p>
+        <ShareWidget />
 
         <div className="flex items-center justify-center">
           <Image

@@ -1,4 +1,5 @@
 import QuoteCard from "@/components/card/QuoteCard";
+import ShareWidget from "@/components/share/ShareWidget";
 import { getQuote } from "@/utils/getData";
 import Image from "next/image";
 import Link from "next/link";
@@ -56,6 +57,7 @@ const QuotePage = async () => {
         life&apos;s challenges. Find the perfect words to brighten your day and
         fuel your journey towards success.
       </p>
+      <ShareWidget />
       {categoryQuoteSection(inspirationalQuoteList, "Inspirational")}
       {categoryQuoteSection(loveQuoteList, "Love")}
       {categoryQuoteSection(funnyQuoteList, "Funny")}

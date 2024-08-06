@@ -1,5 +1,6 @@
 import RiddleCard from "@/components/card/RiddleCard";
 import PaginationComponent from "@/components/pagination/PaginationComponent";
+import ShareWidget from "@/components/share/ShareWidget";
 import { riddlesPageMetaData } from "@/data/riddles/metadata";
 import { ITEMS_PER_PAGE } from "@/utils/constants";
 import { getRiddles } from "@/utils/getData";
@@ -48,6 +49,7 @@ const SubCategoryPage = async ({ params }: any) => {
       <p className="text-center text-lg leading-relaxed text-gray-800 mt-4">
         {detailed}
       </p>
+      <ShareWidget />
       <div className="flex justify-center">
         <Image
           src={`/riddles_${subcategory.toLowerCase()}.svg`}

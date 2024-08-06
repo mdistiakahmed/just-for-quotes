@@ -1,5 +1,6 @@
 import JokeCard from "@/components/card/JokeCard";
 import RiddleCard from "@/components/card/RiddleCard";
+import ShareWidget from "@/components/share/ShareWidget";
 import { getJokes, getRiddles } from "@/utils/getData";
 import Image from "next/image";
 import Link from "next/link";
@@ -48,6 +49,7 @@ const RiddleHomePage = async () => {
         the fun with friends. Solve riddles, laugh out loud, and become a riddle
         master today!
       </p>
+      <ShareWidget />
       {categoryRiddleSection(funnyRiddleList.slice(0, 5), "Funny")}
       {categoryRiddleSection(kidsRiddleList.slice(0, 5), "Kids")}
     </div>

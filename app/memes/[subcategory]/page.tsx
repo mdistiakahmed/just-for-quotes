@@ -1,4 +1,5 @@
 import PaginationComponent from "@/components/pagination/PaginationComponent";
+import ShareWidget from "@/components/share/ShareWidget";
 import { ITEMS_PER_PAGE, memesPageMetaData } from "@/utils/constants";
 import { getMemes } from "@/utils/getData";
 import { Metadata } from "next";
@@ -47,6 +48,7 @@ const SubCategoryPage = async ({ params }: any) => {
       <p className="text-center text-lg leading-relaxed text-gray-800 mt-4">
         {detailed}
       </p>
+      <ShareWidget />
       <div className="flex justify-center">
         <Image
           src={`/meme_${subcategory.toLowerCase()}.svg`}

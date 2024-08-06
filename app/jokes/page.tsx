@@ -1,4 +1,5 @@
 import JokeCard from "@/components/card/JokeCard";
+import ShareWidget from "@/components/share/ShareWidget";
 import { getJokes } from "@/utils/getData";
 import Image from "next/image";
 import Link from "next/link";
@@ -46,6 +47,7 @@ const JokesPage = async () => {
         share with friends and family. Enjoy clean, funny jokes for all ages and
         brighten your day with laughter.
       </p>
+      <ShareWidget />
       {categoryJokesSection(funnyJokesList.slice(0, 5), "Funny")}
       {categoryJokesSection(knockknockJokesList.slice(0, 5), "Knock-knock")}
     </div>

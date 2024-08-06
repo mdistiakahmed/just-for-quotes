@@ -1,3 +1,4 @@
+import ShareWidget from "@/components/share/ShareWidget";
 import { getMemes } from "@/utils/getData";
 import Image from "next/image";
 import Link from "next/link";
@@ -53,6 +54,7 @@ const page = async () => {
         memes, classic thumbs up memes, and iconic Drake memes, we have it all.
         Dive into the world of memes and share the laughter with your friends.
       </p>
+      <ShareWidget />
       {categoryMemesSection(funnyMemeList.slice(0, 5), "Funny")}
       {categoryMemesSection(coupleMemeList.slice(0, 5), "Couple")}
     </div>
