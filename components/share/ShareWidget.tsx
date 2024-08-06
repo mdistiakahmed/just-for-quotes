@@ -7,22 +7,22 @@ import { useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
 
 const ShareWidget = () => {
+  const BASE_URL = "https://www.justforquotes.com";
   const pathname = usePathname();
   const [currentPath] = useState(pathname);
 
   const handleFacebookShare = () => {
-    console.log(currentPath);
-    const shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentPath)}`;
+    const shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(BASE_URL + currentPath)}`;
     window.open(shareUrl, "_blank", "noopener,noreferrer");
   };
 
   const handleTwitterShare = () => {
-    const shareUrl = `https://twitter.com/intent/tweet?url=${encodeURIComponent(currentPath)}`;
+    const shareUrl = `https://twitter.com/intent/tweet?url=${encodeURIComponent(BASE_URL + currentPath)}`;
     window.open(shareUrl, "_blank", "noopener,noreferrer");
   };
 
   const handleLinkedInShare = () => {
-    const shareUrl = `https://www.linkedin.com/shareArticle?url=${encodeURIComponent(currentPath)}`;
+    const shareUrl = `https://www.linkedin.com/shareArticle?url=${encodeURIComponent(BASE_URL + currentPath)}`;
     window.open(shareUrl, "_blank", "noopener,noreferrer");
   };
   return (
