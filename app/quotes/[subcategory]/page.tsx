@@ -1,5 +1,6 @@
 import QuoteCard from "@/components/card/QuoteCard";
 import PaginationComponent from "@/components/pagination/PaginationComponent";
+import ShareWidget from "@/components/share/ShareWidget";
 import { quotePageMetaData } from "@/data/quotes/metadata";
 import { ITEMS_PER_PAGE } from "@/utils/constants";
 import { getQuote } from "@/utils/getData";
@@ -48,6 +49,9 @@ const SubCategoryPage = async ({ params }: any) => {
       <p className="text-center text-lg leading-relaxed text-gray-800 mt-4">
         {detailed}
       </p>
+
+      <ShareWidget />
+
       <div className="flex justify-center">
         <Image
           src={`/quotes_${subcategory.toLowerCase()}.svg`}
