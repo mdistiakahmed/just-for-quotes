@@ -15,6 +15,9 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Daily Motivation, Jokes, Memes & Riddles - Your Fun Hub",
   description: `Explore daily motivation, laughter, and fun! Dive into our collection of motivational quotes, hilarious jokes, trending memes, and mind-bending riddles.`,
+  verification: {
+    google: "da6Ag51wnJkFCiJU8TZpDLusQwSGa16vK-V72u6qOM8",
+  },
   openGraph: {
     title: "Daily Motivation, Jokes, Memes & Riddles - Your Fun Hub",
     description: `Explore daily motivation, laughter, and fun! Dive into our collection of motivational quotes, hilarious jokes, trending memes, and mind-bending riddles.`,
@@ -40,12 +43,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
-        <meta
-          name="google-site-verification"
-          content="da6Ag51wnJkFCiJU8TZpDLusQwSGa16vK-V72u6qOM8"
-        />
-      </Head>
       <GoogleAnalytics gaId="G-GGMJB17QP9" />
       <body className={poppins.className}>
         <NextUIProvider>
