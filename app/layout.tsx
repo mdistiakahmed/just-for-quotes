@@ -5,6 +5,7 @@ import { NextUIProvider } from "@nextui-org/react";
 import Footer from "@/components/footer/Footer";
 import HeaderComponent from "@/components/navbar/Header";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import Head from "next/head";
 
 const poppins = Poppins({
   weight: ["400", "700"],
@@ -39,6 +40,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <meta
+          name="google-site-verification"
+          content="da6Ag51wnJkFCiJU8TZpDLusQwSGa16vK-V72u6qOM8"
+        />
+      </Head>
       <GoogleAnalytics gaId="G-GGMJB17QP9" />
       <body className={poppins.className}>
         <NextUIProvider>
