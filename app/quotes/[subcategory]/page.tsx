@@ -25,7 +25,7 @@ export async function generateMetadata({
       siteName: "JustForQuotes",
       images: [
         {
-          url: `/quotes_${subcategory.toLowerCase()}.svg`,
+          url: `/quotes_${subcategory.toLowerCase()}.jpg`,
           width: 1200,
           height: 630,
           alt: `${subcategory} quotes`,
@@ -54,11 +54,10 @@ const SubCategoryPage = async ({ params }: any) => {
 
       <div className="flex justify-center">
         <Image
-          src={`/quotes_${subcategory.toLowerCase()}.svg`}
+          src={`/quotes_${subcategory.toLowerCase()}.jpg`}
           alt={`${subcategory} quote`}
           height={40}
-          width={40}
-          className="h-[200px] w-[200px]"
+          width={400}
         />
       </div>
       <div className="grid grid-cols-1 gap-16 sm:grid-cols-2">
