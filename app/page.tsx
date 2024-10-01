@@ -31,7 +31,7 @@ export default async function Home() {
             alt="nature"
             height={40}
             width={40}
-            className="h-[300px] w-[400px]"
+            className="h-[400px] w-[400px]"
           />
         </div>
 
