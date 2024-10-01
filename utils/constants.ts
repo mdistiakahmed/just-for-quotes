@@ -1,4 +1,4 @@
-export const ITEMS_PER_PAGE = 40;
+export const ITEMS_PER_PAGE = 80;
 
 export const navOptions = [
   { name: "Quotes", path: "/quotes" },
