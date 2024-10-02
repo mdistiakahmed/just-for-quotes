@@ -25,7 +25,7 @@ export async function generateMetadata({
       siteName: "JustForQuotes",
       images: [
         {
-          url: `/quotes_${subcategory.toLowerCase()}.jpg`,
+          url: `/quotes_${subcategory.toLowerCase()}.webp`,
           width: 1200,
           height: 630,
           alt: `${subcategory} quotes`,
@@ -42,6 +42,9 @@ const SubCategoryPage = async ({ params }: any) => {
   const quoteList = await getQuote(subcategory);
   const totalItem = quoteList?.length;
   const firstPageData = quoteList?.slice(0, ITEMS_PER_PAGE);
+  const middleIndex = Math.ceil(quoteList.length / 2);
+  const firstHalf = quoteList.slice(0, middleIndex);
+  const secondHalf = quoteList.slice(middleIndex);
 
   return (
     <div className="flex flex-col gap-5">
@@ -52,16 +55,38 @@ const SubCategoryPage = async ({ params }: any) => {
 
       <ShareWidget />
 
-      <div className="flex justify-center">
-        <Image
-          src={`/quotes_${subcategory.toLowerCase()}.jpg`}
-          alt={`${subcategory} quote`}
-          height={40}
-          width={400}
-        />
+      <div className=" flex justify-center ">
+        <div className="relative  h-[250px] w-[400px]">
+          <Image
+            src={`/quotes_${subcategory.toLowerCase()}.webp`}
+            alt={`${subcategory} quote`}
+            fill
+          />
+        </div>
       </div>
       <div className="grid grid-cols-1 gap-16 sm:grid-cols-2">
-        {firstPageData.map((q, index) => (
+        {firstHalf.map((q, index) => (
+          <QuoteCard
+            quote={q.quote}
+            author={q.author}
+            serialNumber={index}
+            key={index}
+          />
+        ))}
+      </div>
+
+      <div className=" flex justify-center py-6">
+        <div className="relative  h-[250px] w-[400px]">
+          <Image
+            src={`/dream_big.webp`}
+            alt={`Clouds with text dream big`}
+            fill
+          />
+        </div>
+      </div>
+
+      <div className="grid grid-cols-1 gap-16 sm:grid-cols-2">
+        {secondHalf.map((q, index) => (
           <QuoteCard
             quote={q.quote}
             author={q.author}
