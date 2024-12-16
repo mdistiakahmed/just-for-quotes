@@ -1,15 +1,37 @@
 export const jokeList = [
   {
-    joke: "What did the full glass say to the empty glass? You look drunk",
+    joke: `Husband, annoyed with his wife, grumbled to himself, "All she does is watch YouTube and TikTok—she doesn't do any work!"
+;Frustrated, he made a wish to God, "Please, switch our roles so she understands how hard I work!"
+;God nodded and granted his wish.
+;The next morning, the husband woke up in his wife's role, while she took on his.
+;By the end of the day, the husband was utterly exhausted from cooking, cleaning, laundry, and taking care of everything.
+;He dropped to his knees and pleaded, "God, I made a mistake! I now understand how hard my wife works. Please switch me back!"
+;God chuckled and replied, "Sure, but there's one small problem."
+;The husband asked, "What problem?"
+;God grinned, "You're pregnant. Call me in 9 months.`,
   },
   {
-    joke: "What do you call an angry carrot?A steamed veggie.",
+    joke: `A wife complained to God, "My husband never helps with housework. He just sits on the couch all day!"
+;God decided to teach him a lesson and made the husband take over all her chores for a week.
+;On the first day, he vacuumed, cooked, cleaned, and folded laundry.
+;By day two, he was begging, "God, this is harder than my 9-to-5! Please switch us back!"
+;God replied, "Not yet—you still have 5 days left... and three PTA meetings.`,
   },
   {
-    joke: "What do lawyers wear under their pants? Briefs.",
+    joke: `;A man, frustrated with his wife, said, "All she does is shop online! I wish I could live her life for a day."
+;God granted his wish.
+;The next day, he had to handle online grocery orders, return packages, juggle calls with customer service, and pick outfits for three kids.
+;Exhausted, he said, "God, I surrender! Switch me back!"
+;God replied, "Hold on, you have 10 Amazon reviews to write first."`,
   },
   {
-    joke: 'What did the big flower say to the little flower?"Hi, bud!"',
+    joke: `A girlfriend asked, "Do you know what day it is today?"
+;The boyfriend panicked, "Uh... our anniversary?"
+;She shook her head. "Nope."
+;"Your birthday?"
+;She laughed, "Nope."
+;He sighed in relief, "Oh, thank God!"
+;"It’s the day I realized you don’t remember anything.`,
   },
   {
     joke: "What do you call a person with too many past relationships?Excess of Exes",
